@@ -59,7 +59,7 @@ async function main() {
   const legacyDemoPassword = await bcrypt.hash("demo123", 10);
   const legacyDemo = await prisma.user.upsert({
     where: { email: "demo@plancraft.ai" },
-    update: {},
+    update: { password: legacyDemoPassword },
     create: {
       name: "Legacy Demo User",
       email: "demo@plancraft.ai",
