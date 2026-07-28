@@ -1,44 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
-
-// Mock user credentials for local development (no Python backend needed)
-const MOCK_USERS = [
-  {
-    email: "demo@plancraft.ai",
-    password: "demo123",
-    user: {
-      id: "u1",
-      name: "Demo User",
-      email: "demo@plancraft.ai",
-      role: "user",
-      plan: "pro",
-      createdAt: new Date().toISOString(),
-      verified: true,
-      aiCreditsUsed: 12,
-      aiCreditsTotal: 100,
-      storageUsedMb: 45,
-      storageQuotaMb: 1024,
-      projectsCount: 3,
-    },
-  },
-  {
-    email: "admin@plancraft.ai",
-    password: "admin123",
-    user: {
-      id: "u2",
-      name: "Admin User",
-      email: "admin@plancraft.ai",
-      role: "admin",
-      plan: "enterprise",
-      createdAt: new Date().toISOString(),
-      verified: true,
-      aiCreditsUsed: 5,
-      aiCreditsTotal: 1000,
-      storageUsedMb: 120,
-      storageQuotaMb: 10240,
-      projectsCount: 15,
-    },
-  },
-];
+import { prisma } from "@/lib/prisma";
+import { signToken } from "@/lib/auth-utils";
 
 export async function POST(req: NextRequest) {
   try {
@@ -52,24 +14,31 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const match = MOCK_USERS.find(
-      (u) => u.email.toLowerCase() === email.toLowerCase() && u.password === password
-    );
+    const user = await prisma.user.findUnique({
+      where: { email: email.toLowerCase() }
+    });
 
-    if (!match) {
+    // Note: In production, compare hashed passwords. Using raw for simple mock/demo DB.
+    if (!user || user.password !== password) {
       return NextResponse.json(
         { detail: "Invalid email or password" },
         { status: 401 }
       );
     }
 
+    const tokenPayload = { userId: user.id, email: user.email, role: user.role };
+    
+    // Omit sensitive data like password from returned user object
+    const { password: _, ...safeUser } = user;
+
     return NextResponse.json({
-      access_token: `mock_access_token_${match.user.id}_${Date.now()}`,
-      refresh_token: `mock_refresh_token_${match.user.id}_${Date.now()}`,
+      access_token: signToken(tokenPayload),
+      refresh_token: signToken(tokenPayload, "30d"),
       token_type: "bearer",
-      user: match.user,
+      user: safeUser,
     });
-  } catch {
+  } catch (err: any) {
+    console.error("Login Error:", err);
     return NextResponse.json({ detail: "Internal server error" }, { status: 500 });
   }
 }

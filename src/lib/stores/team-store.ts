@@ -18,7 +18,6 @@ export const useTeamStore = create<TeamState>((set, get) => ({
 
   inviteMember: async (email, role) => {
     set({ inviteLoading: true });
-    await new Promise(r => setTimeout(r, 1200));
     const newMember: TeamMember = {
       id: `tm${Date.now()}`,
       name: email.split("@")[0].replace(/\./g, " ").replace(/\b\w/g, l => l.toUpperCase()),

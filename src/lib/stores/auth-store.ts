@@ -139,6 +139,9 @@ export const useAuthStore = create<AuthState>()(
         } catch {}
         clearTokens();
         setAuthCookie("false");
+        if (typeof window !== "undefined") {
+          localStorage.clear();
+        }
         set({ user: null, isAuthenticated: false });
       },
       updateProfile: async (data) => {

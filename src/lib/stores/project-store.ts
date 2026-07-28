@@ -158,30 +158,19 @@ export const useProjectStore = create<ProjectState>()(
       createProject: async (data) => {
         set({ isLoading: true });
         try {
-          // Mock creation since backend is unavailable
-          const mockId = `proj_${Date.now()}`;
-          const project = {
-            id: mockId,
-            name: data.name || "New Project",
-            description: data.description || "",
-            userId: data.userId || "u1",
-            plotLength: data.plotLength || 60,
-            plotWidth: data.plotWidth || 40,
-            facing: data.facing || "North",
-            floors: data.floors || 1,
-            budgetTier: data.budgetTier || "Standard",
-            style: data.style || "Modern",
-            vastu: data.vastu ?? true,
-            status: "draft" as const,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-            rooms: [],
-            materials: [],
-          };
+          const res = await apiClient("/api/projects", {
+            method: "POST",
+            body: JSON.stringify(data)
+          });
+          const resData = await res.json();
+          
+          if (!res.ok) throw new Error("Failed to create project");
+          
           const projectWithAssets = {
-            ...project,
-            assets: getMockAssets(project)
+            ...resData.project,
+            assets: getMockAssets(resData.project)
           };
+          
           set((state) => ({
             projects: [projectWithAssets, ...state.projects],
             currentProject: projectWithAssets,
@@ -220,7 +209,12 @@ export const useProjectStore = create<ProjectState>()(
         } catch {}
       },
 
-      updateProject: (id, data) => {
+      updateProject: async (id, data) => {
+        try {
+          await apiClient(`/api/projects/${id}`, { method: "PUT", body: JSON.stringify(data) });
+        } catch (err) {
+          console.error("Failed to update project", err);
+        }
         set((state) => ({
           projects: state.projects.map((p) => (p.id === id ? { ...p, ...data, updatedAt: new Date().toISOString() } : p)),
           currentProject: state.currentProject?.id === id ? { ...state.currentProject, ...data } : state.currentProject,
