@@ -66,20 +66,29 @@ const nextConfig: NextConfig = {
       ];
     },
     async rewrites() {
-      return [
-        {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+      const wsUrl = process.env.NEXT_PUBLIC_WS_URL;
+      const rewrites = [];
+
+      if (apiUrl) {
+        rewrites.push({
           source: "/api/:path*",
-          destination: `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/api/:path*`,
-        },
-        {
+          destination: `${apiUrl}/api/:path*`,
+        });
+        rewrites.push({
           source: "/uploads/:path*",
-          destination: `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000"}/uploads/:path*`,
-        },
-        {
+          destination: `${apiUrl}/uploads/:path*`,
+        });
+      }
+
+      if (wsUrl) {
+        rewrites.push({
           source: "/ws/:path*",
-          destination: `${process.env.NEXT_PUBLIC_WS_URL || "http://localhost:8000"}/ws/:path*`,
-        },
-      ];
+          destination: `${wsUrl}/ws/:path*`,
+        });
+      }
+
+      return rewrites;
     },
   }),
 };
