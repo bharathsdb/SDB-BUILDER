@@ -62,23 +62,30 @@ export async function apiClient(endpoint: string, options: RequestInit = {}): Pr
   
   let res = await fetch(`${API_BASE}${endpoint}`, { ...options, headers });
   
-  if (res.status === 401 && refreshToken) {
-    if (!refreshPromise) {
-      refreshPromise = refreshAccessToken().finally(() => { refreshPromise = null; });
-    }
-    try {
-      await refreshPromise;
-      const newToken = getAccessToken();
-      if (newToken) {
-        headers["Authorization"] = `Bearer ${newToken}`;
-        res = await fetch(`${API_BASE}${endpoint}`, { ...options, headers });
+  if (res.status === 401 && !endpoint.includes("/api/auth/login")) {
+    if (refreshToken) {
+      if (!refreshPromise) {
+        refreshPromise = refreshAccessToken().finally(() => { refreshPromise = null; });
       }
-    } catch {
+      try {
+        await refreshPromise;
+        const newToken = getAccessToken();
+        if (newToken) {
+          headers["Authorization"] = `Bearer ${newToken}`;
+          res = await fetch(`${API_BASE}${endpoint}`, { ...options, headers });
+        }
+      } catch {
+        clearTokens();
+        if (typeof window !== "undefined" && window.location.pathname !== "/login") {
+          window.location.href = "/login";
+        }
+        throw new Error("Session expired");
+      }
+    } else {
       clearTokens();
-      if (typeof window !== "undefined") {
-        window.location.href = "/";
+      if (typeof window !== "undefined" && window.location.pathname !== "/login") {
+        window.location.href = "/login";
       }
-      throw new Error("Session expired");
     }
   }
   
