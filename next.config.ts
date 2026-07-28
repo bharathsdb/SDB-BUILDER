@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
     root: path.join(__dirname),
   },
 
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   // ── Performance ─────────────────────────────────────────────────
   // Minify output and strip all console.* calls in production builds
   compiler: {

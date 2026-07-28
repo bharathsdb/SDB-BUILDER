@@ -27,10 +27,12 @@ export default function LoginPage() {
   // Clear any stored session once when visiting the login page — use a ref
   // so it only runs once and never triggers a re-render.
   const didLogout = React.useRef(false);
-  if (!didLogout.current) {
-    didLogout.current = true;
-    useAuthStore.getState().logout();
-  }
+  React.useEffect(() => {
+    if (!didLogout.current) {
+      didLogout.current = true;
+      useAuthStore.getState().logout();
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
