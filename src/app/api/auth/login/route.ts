@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { signToken } from "@/lib/auth-utils";
 
+import bcrypt from "bcrypt";
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -18,8 +20,16 @@ export async function POST(req: NextRequest) {
       where: { email: email.toLowerCase() }
     });
 
-    // Note: In production, compare hashed passwords. Using raw for simple mock/demo DB.
-    if (!user || user.password !== password) {
+    if (!user) {
+      return NextResponse.json(
+        { detail: "Invalid email or password" },
+        { status: 401 }
+      );
+    }
+
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+
+    if (!isPasswordValid) {
       return NextResponse.json(
         { detail: "Invalid email or password" },
         { status: 401 }
