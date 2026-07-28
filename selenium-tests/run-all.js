@@ -70,7 +70,6 @@ function runSuite(file) {
 
     child.on("close", (code) => {
       clearTimeout(timer);
-      killProcesses();
       if (timedOut) {
         resolve({ file, stdout, stderr, timedOut: true });
       } else {
@@ -80,7 +79,6 @@ function runSuite(file) {
 
     child.on("error", (err) => {
       clearTimeout(timer);
-      killProcesses();
       resolve({ file, stdout, stderr, error: err.message });
     });
   });
@@ -107,7 +105,7 @@ function parseResults(file, stdout, stderr) {
 
 async function runAllTests() {
   console.log("=".repeat(70));
-  console.log("  PlanCraftAI - Selenium E2E Test Suite");
+  console.log("  PlanCraftAI - Selenium E2E Test Suite (Parallel Mode)");
   console.log("=".repeat(70));
   console.log(`  Starting: ${new Date().toISOString()}`);
   console.log("=".repeat(70));
@@ -116,7 +114,7 @@ async function runAllTests() {
     fs.mkdirSync(REPORTS_DIR, { recursive: true });
   }
 
-  killProcesses();
+  killProcesses(); // Only kill before starting all tests
 
   const allResults = [];
   let totalTests = 0;
@@ -124,119 +122,94 @@ async function runAllTests() {
   let totalFailed = 0;
   const overallStart = new Date();
 
-  for (const file of TEST_FILES) {
-    console.log(`\n${"-".repeat(70)}`);
-    console.log(`  Running: ${file}`);
-    console.log(`${"-".repeat(70)}`);
+  // Concurrency Pool Execution
+  const CONCURRENCY = 4;
+  let index = 0;
+  
+  async function worker(workerId) {
+    while (index < TEST_FILES.length) {
+      const currentIndex = index++;
+      const file = TEST_FILES[currentIndex];
+      
+      console.log(`\n[Worker ${workerId}] ${"-".repeat(50)}`);
+      console.log(`[Worker ${workerId}] Running: ${file}`);
+      
+      const suiteStart = new Date();
+      const result = await runSuite(file);
+      const suiteEnd = new Date();
+      const suiteDuration = (suiteEnd - suiteStart) / 1000;
 
-    const suiteStart = new Date();
-    const result = await runSuite(file);
-    const suiteEnd = new Date();
-    const suiteDuration = (suiteEnd - suiteStart) / 1000;
+      if (result.timedOut) {
+        console.log(`  ⏱ TIMED OUT (${suiteDuration.toFixed(0)}s) - ${file}`);
+        allResults.push({
+          suite: file,
+          total: 1, passed: 0, failed: 1, passRate: 0,
+          durationSec: suiteDuration, startTime: suiteStart.toISOString(), endTime: suiteEnd.toISOString(),
+          tests: [{ title: `${file} - Suite timed out`, status: "FAIL", error: "Test suite exceeded 180s timeout", duration: suiteDuration * 1000 }],
+        });
+        totalTests += 1; totalFailed += 1;
+        continue;
+      }
 
-    if (result.timedOut) {
-      console.log(`  ⏱ TIMED OUT (${suiteDuration.toFixed(0)}s) - ${file}`);
+      if (result.error) {
+        console.log(`  ✗ ERROR: ${result.error}`);
+        allResults.push({
+          suite: file,
+          total: 1, passed: 0, failed: 1, passRate: 0,
+          durationSec: suiteDuration, startTime: suiteStart.toISOString(), endTime: suiteEnd.toISOString(),
+          tests: [{ title: `${file} - Error`, status: "FAIL", error: result.error, duration: 0 }],
+        });
+        totalTests += 1; totalFailed += 1;
+        continue;
+      }
+
+      const suiteResult = parseResults(file, result.stdout, result.stderr);
+      if (!suiteResult) {
+        console.log(`  ✗ Could not parse test results for ${file}`);
+        allResults.push({
+          suite: file,
+          total: 1, passed: 0, failed: 1, passRate: 0,
+          durationSec: suiteDuration, startTime: suiteStart.toISOString(), endTime: suiteEnd.toISOString(),
+          tests: [{ title: `${file} - Parse error`, status: "FAIL", error: "Could not parse JSON output", duration: 0 }],
+        });
+        totalTests += 1; totalFailed += 1;
+        continue;
+      }
+
+      const stats = suiteResult.stats || {};
+      const passes = stats.passes || 0;
+      const failures = stats.failures || 0;
+      const suiteTotal = passes + failures;
+      const passRate = suiteTotal > 0 ? ((passes / suiteTotal) * 100).toFixed(2) : "0.00";
+
+      totalTests += suiteTotal;
+      totalPassed += passes;
+      totalFailed += failures;
+
+      console.log(`[Worker ${workerId}] ✅ Finished: ${file} | Passed: ${passes}/${suiteTotal} | Failed: ${failures} | Rate: ${passRate}% | Duration: ${suiteDuration.toFixed(2)}s`);
+
+      const testDetails = (suiteResult.tests || []).map((t) => ({
+        title: t.fullTitle || t.title || "Unknown",
+        status: t.err && t.err.message ? "FAIL" : "PASS",
+        error: t.err ? (t.err.message || "").substring(0, 500) : "",
+        duration: t.duration || 0,
+      }));
+
       allResults.push({
-        suite: file,
-        total: 1,
-        passed: 0,
-        failed: 1,
-        passRate: 0,
-        durationSec: suiteDuration,
-        startTime: suiteStart.toISOString(),
-        endTime: suiteEnd.toISOString(),
-        tests: [{
-          title: `${file} - Suite timed out`,
-          status: "FAIL",
-          error: "Test suite exceeded 180s timeout",
-          duration: suiteDuration * 1000,
-        }],
+        suite: file, total: suiteTotal, passed: passes, failed: failures, passRate: parseFloat(passRate),
+        durationSec: suiteDuration, startTime: suiteStart.toISOString(), endTime: suiteEnd.toISOString(), tests: testDetails,
       });
-      totalTests += 1;
-      totalFailed += 1;
-      continue;
     }
-
-    if (result.error) {
-      console.log(`  ✗ ERROR: ${result.error}`);
-      allResults.push({
-        suite: file,
-        total: 1,
-        passed: 0,
-        failed: 1,
-        passRate: 0,
-        durationSec: suiteDuration,
-        startTime: suiteStart.toISOString(),
-        endTime: suiteEnd.toISOString(),
-        tests: [{
-          title: `${file} - Error`,
-          status: "FAIL",
-          error: result.error,
-          duration: 0,
-        }],
-      });
-      totalTests += 1;
-      totalFailed += 1;
-      continue;
-    }
-
-    const suiteResult = parseResults(file, result.stdout, result.stderr);
-    if (!suiteResult) {
-      console.log(`  ✗ Could not parse test results`);
-      console.log(`  stdout (first 300 chars): ${(result.stdout || "").substring(0, 300)}`);
-      console.log(`  stderr (first 300 chars): ${(result.stderr || "").substring(0, 300)}`);
-      allResults.push({
-        suite: file,
-        total: 1,
-        passed: 0,
-        failed: 1,
-        passRate: 0,
-        durationSec: suiteDuration,
-        startTime: suiteStart.toISOString(),
-        endTime: suiteEnd.toISOString(),
-        tests: [{
-          title: `${file} - Parse error`,
-          status: "FAIL",
-          error: "Could not parse JSON output",
-          duration: 0,
-        }],
-      });
-      totalTests += 1;
-      totalFailed += 1;
-      continue;
-    }
-
-    const stats = suiteResult.stats || {};
-    const passes = stats.passes || 0;
-    const failures = stats.failures || 0;
-    const suiteTotal = passes + failures;
-    const passRate = suiteTotal > 0 ? ((passes / suiteTotal) * 100).toFixed(2) : "0.00";
-
-    totalTests += suiteTotal;
-    totalPassed += passes;
-    totalFailed += failures;
-
-    console.log(`  Passed: ${passes}/${suiteTotal}  |  Failed: ${failures}  |  Rate: ${passRate}%  |  Duration: ${suiteDuration.toFixed(2)}s`);
-
-    const testDetails = (suiteResult.tests || []).map((t) => ({
-      title: t.fullTitle || t.title || "Unknown",
-      status: t.err && t.err.message ? "FAIL" : "PASS",
-      error: t.err ? (t.err.message || "").substring(0, 500) : "",
-      duration: t.duration || 0,
-    }));
-
-    allResults.push({
-      suite: file,
-      total: suiteTotal,
-      passed: passes,
-      failed: failures,
-      passRate: parseFloat(passRate),
-      durationSec: suiteDuration,
-      startTime: suiteStart.toISOString(),
-      endTime: suiteEnd.toISOString(),
-      tests: testDetails,
-    });
   }
+
+  const workers = [];
+  for (let i = 0; i < CONCURRENCY; i++) {
+    workers.push(worker(i + 1));
+  }
+  
+  await Promise.all(workers);
+  
+  killProcesses(); // Kill all stray chrome instances at the very end
 
   const overallEnd = new Date();
   const overallDuration = (overallEnd - overallStart) / 1000;
