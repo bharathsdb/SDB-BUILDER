@@ -166,7 +166,7 @@ export default function LoginPage() {
               </div>
             )}
 
-            <button type="submit" className="login-submit-btn" disabled={busy}>
+            <button type="submit" className="login-submit-btn" disabled={busy} suppressHydrationWarning>
               {busy ? "Signing in..." : isSuccess ? "Success!" : "Login"}
             </button>
             
