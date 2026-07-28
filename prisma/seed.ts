@@ -56,6 +56,23 @@ async function main() {
   console.log("Seeded admin:", admin.email);
   console.log("Seeded demo:", demo.email);
 
+  const legacyDemoPassword = await bcrypt.hash("demo123", 10);
+  const legacyDemo = await prisma.user.upsert({
+    where: { email: "demo@plancraft.ai" },
+    update: {},
+    create: {
+      name: "Legacy Demo User",
+      email: "demo@plancraft.ai",
+      password: legacyDemoPassword,
+      role: "user",
+      plan: "free",
+      verified: true,
+      createdAt: now,
+      updatedAt: now,
+    },
+  });
+  console.log("Seeded legacy demo:", legacyDemo.email);
+
   const sampleProject = await prisma.project.upsert({
     where: { id: "seed-p1" },
     update: {},
