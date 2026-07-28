@@ -1,0 +1,683 @@
+﻿
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(auth)\forgot-password\page.tsx
+  28:13  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  30:56  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  54:73  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(auth)\layout.tsx
+  54:55   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  54:196  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(auth)\verify-email\page.tsx
+  27:11  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\ai\page.tsx
+  11:16  warning  'CardHeader' is defined but never used              @typescript-eslint/no-unused-vars
+  31:44  warning  'currentPrompt' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  31:59  warning  'setPrompt' is assigned a value but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\analytics\page.tsx
+  4:59  warning  'Calendar' is defined but never used    @typescript-eslint/no-unused-vars
+  4:69  warning  'TrendingUp' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\billing\page.tsx
+   4:57  warning  'Calendar' is defined but never used                      @typescript-eslint/no-unused-vars
+   4:78  warning  'Users' is defined but never used                         @typescript-eslint/no-unused-vars
+   5:10  warning  'motion' is defined but never used                        @typescript-eslint/no-unused-vars
+   6:31  warning  'Modal' is defined but never used                         @typescript-eslint/no-unused-vars
+  13:11  warning  'addToast' is assigned a value but never used             @typescript-eslint/no-unused-vars
+  26:10  warning  'showPaymentModal' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  26:28  warning  'setShowPaymentModal' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\cost\page.tsx
+  4:10  warning  'IndianRupee' is defined but never used  @typescript-eslint/no-unused-vars
+  4:37  warning  'TrendingUp' is defined but never used   @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\library\page.tsx
+    5:37  warning  'Warehouse' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    6:17  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+    7:3   warning  'Download' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+    7:18  warning  'Clock' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    8:11  warning  'Camera' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+    8:19  warning  'FolderOpen' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+    8:31  warning  'X' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+   15:29  warning  'CardHeader' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   27:24  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   53:27  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\library\page.tsx:53:27
+  51 |       ...t,
+  52 |       category: t.category === "Premium" ? "Residential" : t.category,
+> 53 |       size: `${Math.floor(Math.random() * 2000 + 800)} sqft`,
+     |                           ^^^^^^^^^^^^^ Cannot call impure function
+  54 |     })), []);
+  55 |
+  56 |   React.useEffect(() => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             react-hooks/purity
+   58:7   error    Error: Cannot access variable before it is declared
+
+`fetchMediaAssets` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\library\page.tsx:58:7
+  56 |   React.useEffect(() => {
+  57 |     if (activeCategory === "uploads" || activeCategory === "blueprints" || activeCategory === "all") {
+> 58 |       fetchMediaAssets();
+     |       ^^^^^^^^^^^^^^^^ `fetchMediaAssets` accessed before it is declared
+  59 |     }
+  60 |   }, [activeCategory]);
+  61 |
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\library\page.tsx:62:3
+  60 |   }, [activeCategory]);
+  61 |
+> 62 |   const fetchMediaAssets = async () => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 63 |     setIsLoadingMedia(true);
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 64 |     try {
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 75 |     }
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 76 |   };
+     | ^^^^^ `fetchMediaAssets` is declared here
+  77 |
+  78 |   const categorized = React.useMemo(() => {
+  79 |     if (activeCategory === "templates") return floorPlanLibrary;  react-hooks/immutability
+  224:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+  235:29  warning  Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 jsx-a11y/alt-text
+  292:27  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+  294:84  warning  Image elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 jsx-a11y/alt-text
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\notifications\page.tsx
+   6:3   warning  'Mail' is defined but never used                                 @typescript-eslint/no-unused-vars
+  47:52  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\page.tsx
+   7:34  warning  'IndianRupee' is defined but never used                          @typescript-eslint/no-unused-vars
+   9:22  warning  'MoreHorizontal' is defined but never used                       @typescript-eslint/no-unused-vars
+  41:35  warning  'duplicateProject' is assigned a value but never used            @typescript-eslint/no-unused-vars
+  41:53  warning  'deleteProject' is assigned a value but never used               @typescript-eslint/no-unused-vars
+  66:70  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  66:77  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  98:45  warning  'i' is defined but never used                                    @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\process\page.tsx
+    4:8   warning  'Link' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    6:32  warning  'XCircle' is defined but never used                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+    7:39  warning  'Maximize2' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    9:10  warning  'Camera' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    9:50  warning  'MapPin' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   10:17  warning  'Cloud' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   10:24  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   10:36  warning  'Save' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   10:42  warning  'Share2' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   10:50  warning  'ChevronDown' is defined but never used                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   39:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   48:9   warning  'assetId' is assigned a value but never used                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+   62:17  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  240:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  362:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  534:43  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  587:60  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  695:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  708:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\projects\[id]\page.tsx
+  19:9   warning  'router' is assigned a value but never used                                                                             @typescript-eslint/no-unused-vars
+  24:80  warning  React Hook React.useEffect has a missing dependency: 'fetchProjects'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  42:59  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                         react/no-unescaped-entities
+  42:80  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                         react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\projects\page.tsx
+   8:40  warning  'Star' is defined but never used          @typescript-eslint/no-unused-vars
+   8:54  warning  'Download' is defined but never used      @typescript-eslint/no-unused-vars
+   9:3   warning  'Filter' is defined but never used        @typescript-eslint/no-unused-vars
+   9:11  warning  'SortAsc' is defined but never used       @typescript-eslint/no-unused-vars
+   9:31  warning  'ArrowRight' is defined but never used    @typescript-eslint/no-unused-vars
+   9:43  warning  'Calendar' is defined but never used      @typescript-eslint/no-unused-vars
+   9:53  warning  'Users' is defined but never used         @typescript-eslint/no-unused-vars
+  44:62  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\reviews\page.tsx
+  6:24  warning  'Badge' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\settings\page.tsx
+  5:18  warning  'Card' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\sharing\page.tsx
+  4:36  warning  'Users' is defined but never used   @typescript-eslint/no-unused-vars
+  4:50  warning  'X' is defined but never used       @typescript-eslint/no-unused-vars
+  5:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+  6:31  warning  'Input' is defined but never used   @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\subscription\page.tsx
+  4:20  warning  'Zap' is defined but never used              @typescript-eslint/no-unused-vars
+  4:35  warning  'Users' is defined but never used            @typescript-eslint/no-unused-vars
+  4:67  warning  'HelpCircle' is defined but never used       @typescript-eslint/no-unused-vars
+  5:18  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\templates\page.tsx
+  6:33  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\dashboard\upload\page.tsx
+    5:40  warning  'Check' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+    5:47  warning  'Loader2' is defined but never used                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+    6:20  warning  'FileUp' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    6:41  warning  'ChevronRight' is defined but never used                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+    6:55  warning  'Download' is defined but never used                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+    7:3   warning  'Maximize2' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    7:14  warning  'Minimize2' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    7:25  warning  'RotateCcw' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+    7:36  warning  'Crop' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  157:14  warning  'err' is defined but never used                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+  209:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  243:9   warning  'uploadingCount' is assigned a value but never used                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  399:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  471:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(dashboard)\layout.tsx
+   8:49  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+  10:14  warning  'Palette' is defined but never used       @typescript-eslint/no-unused-vars
+  10:53  warning  'Image' is defined but never used         @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\about\page.tsx
+    6:25  warning  'Eye' is defined but never used                                  @typescript-eslint/no-unused-vars
+    7:10  warning  'cn' is defined but never used                                   @typescript-eslint/no-unused-vars
+  106:93  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  110:91  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  185:19  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\api-docs\page.tsx
+  6:37  warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+  6:64  warning  'Server' is defined but never used        @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\architects\page.tsx
+  6:23  warning  'Users' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\blog\[slug]\page.tsx
+  6:10  warning  'ArrowLeft' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\blog\page.tsx
+   6:27  warning  'ArrowRight' is defined but never used               @typescript-eslint/no-unused-vars
+  14:7   warning  'categoryColors' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\builders\page.tsx
+    6:38   warning  'CheckCircle2' is defined but never used                         @typescript-eslint/no-unused-vars
+  220:19   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  220:87   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  220:171  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\careers\page.tsx
+    4:8   warning  'Link' is defined but never used                                 @typescript-eslint/no-unused-vars
+    7:10  warning  'cn' is defined but never used                                   @typescript-eslint/no-unused-vars
+    9:44  warning  'CardHeader' is defined but never used                           @typescript-eslint/no-unused-vars
+  128:56  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  131:35  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\contact\page.tsx
+   6:23  warning  'MapPin' is defined but never used                               @typescript-eslint/no-unused-vars
+   6:52  warning  'Globe' is defined but never used                                @typescript-eslint/no-unused-vars
+  59:53  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  60:41  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\docs\page.tsx
+  101:9  warning  'currentSection' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\faq\page.tsx
+   74:67  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   74:83  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  162:18  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  162:40  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\features\page.tsx
+  6:10   warning  'Layout' is defined but never used      @typescript-eslint/no-unused-vars
+  6:41   warning  'Home' is defined but never used        @typescript-eslint/no-unused-vars
+  6:47   warning  'Layers' is defined but never used      @typescript-eslint/no-unused-vars
+  6:65   warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  6:83   warning  'BarChart3' is defined but never used   @typescript-eslint/no-unused-vars
+  6:111  warning  'Shield' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\gallery\page.tsx
+  6:24  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  6:66  warning  'Layers' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\privacy\page.tsx
+    6:29   warning  'Globe' is defined but never used                                @typescript-eslint/no-unused-vars
+    6:36   warning  'Lock' is defined but never used                                 @typescript-eslint/no-unused-vars
+    6:42   warning  'Cookie' is defined but never used                               @typescript-eslint/no-unused-vars
+    6:50   warning  'Database' is defined but never used                             @typescript-eslint/no-unused-vars
+    6:60   warning  'Eye' is defined but never used                                  @typescript-eslint/no-unused-vars
+    6:65   warning  'Mail' is defined but never used                                 @typescript-eslint/no-unused-vars
+    7:10   warning  'cn' is defined but never used                                   @typescript-eslint/no-unused-vars
+  101:197  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  101:219  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:68   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:71   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:74   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:77   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:83   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  169:87   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\security\page.tsx
+  7:10  warning  'cn' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\solutions\page.tsx
+    6:34   warning  'Briefcase' is defined but never used                            @typescript-eslint/no-unused-vars
+    6:93   warning  'Key' is defined but never used                                  @typescript-eslint/no-unused-vars
+    6:110  warning  'Clock' is defined but never used                                @typescript-eslint/no-unused-vars
+    6:117  warning  'DollarSign' is defined but never used                           @typescript-eslint/no-unused-vars
+   85:28   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  176:95   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\(public)\terms\page.tsx
+   7:10   warning  'cn' is defined but never used                                   @typescript-eslint/no-unused-vars
+  17:47   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  17:59   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  17:112  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  17:118  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:76   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:81   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:86   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:90   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:115  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:123  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:126  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:129  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:132  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:135  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:141  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  18:145  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  59:53   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  93:36   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  93:42   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\ai-usage\page.tsx
+  7:10  warning  'mockGenerationHistory' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\layout.tsx
+  7:121  warning  'ChevronDown' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\marketplace\page.tsx
+  25:28  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\marketplace\page.tsx:25:28
+  23 |       approval: i < 3 ? "approved" as const : i < 5 ? "pending" as const : "rejected" as const,
+  24 |       featured: i < 1,
+> 25 |       earnings: Math.floor(Math.random() * 5000) + 500,
+     |                            ^^^^^^^^^^^^^ Cannot call impure function
+  26 |     }))
+  27 |   );
+  28 |   const [reviewModal, setReviewModal] = React.useState<string | null>(null);  react-hooks/purity
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\page.tsx
+  7:10  warning  'Card' is defined but never used    @typescript-eslint/no-unused-vars
+  7:23  warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\projects\page.tsx
+    4:45  warning  'Filter' is defined but never used        @typescript-eslint/no-unused-vars
+    5:10  warning  'motion' is defined but never used        @typescript-eslint/no-unused-vars
+  101:89  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:91  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\revenue\page.tsx
+  4:10  warning  'IndianRupee' is defined but never used   @typescript-eslint/no-unused-vars
+  4:35  warning  'TrendingDown' is defined but never used  @typescript-eslint/no-unused-vars
+  4:59  warning  'Calendar' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\admin\users\page.tsx
+   4:38  warning  'Check' is defined but never used   @typescript-eslint/no-unused-vars
+   4:72  warning  'Filter' is defined but never used  @typescript-eslint/no-unused-vars
+   5:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+   6:31  warning  'Input' is defined but never used   @typescript-eslint/no-unused-vars
+   8:15  warning  'User' is defined but never used    @typescript-eslint/no-unused-vars
+  50:26  warning  'id' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\cost\page.tsx
+   6:23  warning  'DollarSign' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   6:45  warning  'TrendingUp' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   7:3   warning  'Download' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   7:30  warning  'Layers' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   7:38  warning  'ChevronRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  52:17  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\cost\page.tsx:52:17
+  50 |
+  51 |   React.useEffect(() => {
+> 52 |     if (!costs) handleEstimate();
+     |                 ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  53 |   }, []);
+  54 |
+  55 |   const maxVal = Math.max(...Object.values(costs || {}), 1);  react-hooks/set-state-in-effect
+  53:6   warning  React Hook React.useEffect has missing dependencies: 'costs' and 'handleEstimate'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     react-hooks/exhaustive-deps
+  65:5   error    Error: Cannot reassign variable after render completes
+
+Reassigning `cumulativePercent` after render has completed can cause inconsistent behavior on subsequent renders. Consider using state instead.
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\cost\page.tsx:65:5
+  63 |   const piePaths = pieSegments.map(seg => {
+  64 |     const start = cumulativePercent;
+> 65 |     cumulativePercent += seg.percentage;
+     |     ^^^^^^^^^^^^^^^^^ Cannot reassign `cumulativePercent` after render completes
+  66 |     return { ...seg, startPercent: start, endPercent: cumulativePercent };
+  67 |   });
+  68 |                                                                                                                                                                                                                                                                                                                                                                                                                                      react-hooks/immutability
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\materials\page.tsx
+  6:35  warning  'Scale' is defined but never used      @typescript-eslint/no-unused-vars
+  7:39  warning  'BarChart3' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\structural\page.tsx
+  8:3   warning  'Hammer' is defined but never used   @typescript-eslint/no-unused-vars
+  8:29  warning  'Grid3x3' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\sustainability\page.tsx
+    7:43  warning  'Wind' is defined but never used                                 @typescript-eslint/no-unused-vars
+  191:70  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\analysis\vastu\page.tsx
+   6:32  warning  'MapPin' is defined but never used                    @typescript-eslint/no-unused-vars
+   7:39  warning  'RefreshCw' is defined but never used                 @typescript-eslint/no-unused-vars
+   8:3   warning  'Home' is defined but never used                      @typescript-eslint/no-unused-vars
+   8:9   warning  'Sun' is defined but never used                       @typescript-eslint/no-unused-vars
+   8:14  warning  'Moon' is defined but never used                      @typescript-eslint/no-unused-vars
+   8:20  warning  'Star' is defined but never used                      @typescript-eslint/no-unused-vars
+  46:10  warning  'currentAnalysis' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\generate\page.tsx
+  149:56  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\marketplace\architects\page.tsx
+   4:32  warning  'ArrowUpRight' is defined but never used        @typescript-eslint/no-unused-vars
+   4:53  warning  'Zap' is defined but never used                 @typescript-eslint/no-unused-vars
+   7:31  warning  'Input' is defined but never used               @typescript-eslint/no-unused-vars
+  12:30  warning  'setFilter' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\marketplace\contractors\page.tsx
+   7:31  warning  'Input' is defined but never used               @typescript-eslint/no-unused-vars
+  12:30  warning  'setFilter' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\marketplace\page.tsx
+  7:31  warning  'Input' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\page.tsx
+    7:25  warning  'Hexagon' is defined but never used                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+    8:18  warning  'Star' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  165:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\viewer-3d\page.tsx
+    9:3   warning  'Camera' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    9:11  warning  'Play' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    9:17  warning  'Search' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    9:25  warning  'Maximize' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-unused-vars
+    9:35  warning  'Settings2' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   10:3   warning  'Layers' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   66:15  warning  'color' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  131:9   warning  'router' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  142:36  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\viewer-3d\page.tsx:142:36
+  140 |       try {
+  141 |         const parsed = JSON.parse(decodeURIComponent(roomsParam));
+> 142 |         if (Array.isArray(parsed)) setRooms(parsed);
+      |                                    ^^^^^^^^ Avoid calling setState() directly within an effect
+  143 |       } catch {}
+  144 |     }
+  145 |   }, [searchParams]);  react-hooks/set-state-in-effect
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\2d\image-to-plan\page.tsx
+    6:3   warning  'Eye' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+    6:8   warning  'RotateCcw' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+    6:19  warning  'Grid3x3' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-unused-vars
+    6:28  warning  'Save' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+    6:44  warning  'Home' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+    8:11  warning  'Sparkles' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+    8:21  warning  'Play' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+    8:27  warning  'Circle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    8:41  warning  'Crosshair' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+    8:52  warning  'Trash2' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   13:10  warning  'apiClient' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   32:10  warning  'walls' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   32:17  warning  'setWalls' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+   52:36  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\2d\image-to-plan\page.tsx:52:36
+  50 |       try {
+  51 |         const parsed = JSON.parse(decodeURIComponent(roomsParam));
+> 52 |         if (Array.isArray(parsed)) setRooms(parsed);
+     |                                    ^^^^^^^^ Avoid calling setState() directly within an effect
+  53 |       } catch {}
+  54 |     }
+  55 |     if (imageParam) setImageSrc(decodeURIComponent(imageParam));  react-hooks/set-state-in-effect
+  245:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @next/next/no-img-element
+  293:35  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react/no-unescaped-entities
+  293:50  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react/no-unescaped-entities
+  417:38  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react/no-unescaped-entities
+  417:53  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\2d\page.tsx
+    8:3   warning  'Undo' is defined but never used                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    8:9   warning  'Redo' is defined but never used                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    8:48  warning  'FileText' is defined but never used                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    8:58  warning  'Edit3' is defined but never used                                                                                                                                                                          @typescript-eslint/no-unused-vars
+    8:65  warning  'Eye' is defined but never used                                                                                                                                                                            @typescript-eslint/no-unused-vars
+    9:3   warning  'ChevronRight' is defined but never used                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   10:3   warning  'Maximize2' is defined but never used                                                                                                                                                                      @typescript-eslint/no-unused-vars
+   89:9   warning  The 'rooms' logical expression could make the dependencies of useCallback Hook (at line 179) change on every render. To fix this, wrap the initialization of 'rooms' in its own useMemo() Hook             react-hooks/exhaustive-deps
+  102:9   warning  The 'getRoomTypeColor' function makes the dependencies of useCallback Hook (at line 179) change on every render. To fix this, wrap the definition of 'getRoomTypeColor' in its own useCallback() Hook      react-hooks/exhaustive-deps
+  103:9   warning  The 'getRoomBorderColor' function makes the dependencies of useCallback Hook (at line 179) change on every render. To fix this, wrap the definition of 'getRoomBorderColor' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\ar\page.tsx
+   6:23  warning  'Camera' is defined but never used                       @typescript-eslint/no-unused-vars
+   6:31  warning  'Move3d' is defined but never used                       @typescript-eslint/no-unused-vars
+   7:3   warning  'Grid3x3' is defined but never used                      @typescript-eslint/no-unused-vars
+   7:30  warning  'GripHorizontal' is defined but never used               @typescript-eslint/no-unused-vars
+   8:3   warning  'Sun' is defined but never used                          @typescript-eslint/no-unused-vars
+   8:8   warning  'Moon' is defined but never used                         @typescript-eslint/no-unused-vars
+   8:14  warning  'Target' is defined but never used                       @typescript-eslint/no-unused-vars
+   8:34  warning  'CircleDot' is defined but never used                    @typescript-eslint/no-unused-vars
+  14:20  warning  'setRotation' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  15:27  warning  'setSurfaceDetected' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  16:22  warning  'setIsTracking' is assigned a value but never used       @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\blueprint\page.tsx
+  6:23  warning  'Grid3x3' is defined but never used   @typescript-eslint/no-unused-vars
+  6:40  warning  'Layers' is defined but never used    @typescript-eslint/no-unused-vars
+  8:3   warning  'ZoomIn' is defined but never used    @typescript-eslint/no-unused-vars
+  8:11  warning  'ZoomOut' is defined but never used   @typescript-eslint/no-unused-vars
+  8:20  warning  'Settings' is defined but never used  @typescript-eslint/no-unused-vars
+  8:30  warning  'Save' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\exterior\page.tsx
+  6:23  warning  'TreePine' is defined but never used   @typescript-eslint/no-unused-vars
+  6:33  warning  'Sprout' is defined but never used     @typescript-eslint/no-unused-vars
+  6:41  warning  'Mountain' is defined but never used   @typescript-eslint/no-unused-vars
+  6:51  warning  'Road' is defined but never used       @typescript-eslint/no-unused-vars
+  7:3   warning  'RefreshCw' is defined but never used  @typescript-eslint/no-unused-vars
+  7:27  warning  'Palette' is defined but never used    @typescript-eslint/no-unused-vars
+  7:36  warning  'Home' is defined but never used       @typescript-eslint/no-unused-vars
+  7:42  warning  'PanelTop' is defined but never used   @typescript-eslint/no-unused-vars
+  8:3   warning  'CloudSun' is defined but never used   @typescript-eslint/no-unused-vars
+  8:13  warning  'Droplets' is defined but never used   @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\furniture\page.tsx
+    8:27  warning  'Search' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+    8:35  warning  'SlidersHorizontal' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   80:15  error    Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\furniture\page.tsx:80:15
+  78 |   const handlePlaceItem = (item: FurnitureItem) => {
+  79 |     const newItem: PlacedItem = {
+> 80 |       id: `p${Date.now()}`,
+     |               ^^^^^^^^^^ Cannot call impure function
+  81 |       furnitureId: item.id,
+  82 |       name: item.name,
+  83 |       icon: item.icon,  react-hooks/purity
+   84:15  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\furniture\page.tsx:84:15
+  82 |       name: item.name,
+  83 |       icon: item.icon,
+> 84 |       x: 30 + Math.random() * 40,
+     |               ^^^^^^^^^^^^^ Cannot call impure function
+  85 |       y: 30 + Math.random() * 30,
+  86 |       rotation: 0,
+  87 |       scale: 1,                                    react-hooks/purity
+   85:15  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\furniture\page.tsx:85:15
+  83 |       icon: item.icon,
+  84 |       x: 30 + Math.random() * 40,
+> 85 |       y: 30 + Math.random() * 30,
+     |               ^^^^^^^^^^^^^ Cannot call impure function
+  86 |       rotation: 0,
+  87 |       scale: 1,
+  88 |     };                                                    react-hooks/purity
+  198:75  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react/no-unescaped-entities
+  198:90  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\interior\page.tsx
+  6:23  warning  'Sofa' is defined but never used          @typescript-eslint/no-unused-vars
+  6:29  warning  'Shirt' is defined but never used         @typescript-eslint/no-unused-vars
+  6:46  warning  'Palette' is defined but never used       @typescript-eslint/no-unused-vars
+  7:3   warning  'Grid3x3' is defined but never used       @typescript-eslint/no-unused-vars
+  7:12  warning  'Upload' is defined but never used        @typescript-eslint/no-unused-vars
+  7:20  warning  'RefreshCw' is defined but never used     @typescript-eslint/no-unused-vars
+  7:44  warning  'Maximize2' is defined but never used     @typescript-eslint/no-unused-vars
+  8:3   warning  'ChevronRight' is defined but never used  @typescript-eslint/no-unused-vars
+  8:17  warning  'Search' is defined but never used        @typescript-eslint/no-unused-vars
+  8:25  warning  'ArmchairIcon' is defined but never used  @typescript-eslint/no-unused-vars
+  8:39  warning  'LampIcon' is defined but never used      @typescript-eslint/no-unused-vars
+  8:49  warning  'BookOpen' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\lighting\page.tsx
+  6:34  warning  'Lightbulb' is defined but never used          @typescript-eslint/no-unused-vars
+  7:3   warning  'SlidersHorizontal' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\materials\page.tsx
+  6:39  warning  'ShoppingCart' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\page.tsx
+    7:3    warning  'Settings' is defined but never used                             @typescript-eslint/no-unused-vars
+  145:121  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  145:124  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  224:26   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  230:21   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  230:54   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  233:21   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  233:60   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  236:21   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  236:44   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  265:24   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  265:27   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\vr\page.tsx
+    6:48  warning  'Crosshair' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    7:10  warning  'Layers' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+    8:3   warning  'ChevronUp' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+    8:14  warning  'ChevronDown' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  169:69  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\app\workspace\vr\page.tsx:169:69
+  167 |             </div>
+  168 |             <div className="flex items-center gap-2 text-blue-400">
+> 169 |               <Zap className="w-3 h-3" /> Latency: {Math.round(20 + Math.random() * 10)}ms
+      |                                                                     ^^^^^^^^^^^^^ Cannot call impure function
+  170 |             </div>
+  171 |             <div className="flex items-center gap-2 text-zinc-400">
+  172 |               Draw: 2.4M tris  react-hooks/purity
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\components\layout\Navbar.tsx
+  30:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\components\layout\Navbar.tsx:30:5
+  28 |
+  29 |   React.useEffect(() => {
+> 30 |     setMounted(true);
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  31 |     const handleScroll = () => {
+  32 |       setScrolled(window.scrollY > 20);
+  33 |     };  react-hooks/set-state-in-effect
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\components\theme-provider.tsx
+  108:9  warning  The 'attrs' conditional could make the dependencies of useCallback Hook (at line 129) change on every render. Move it inside the useCallback callback. Alternatively, wrap the initialization of 'attrs' in its own useMemo() Hook  react-hooks/exhaustive-deps
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\components\ui\avatar.tsx
+  13:9  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\components\viewers\ImageViewer.tsx
+  221:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\api\paytm.ts
+   29:51  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   37:49  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   46:14  warning  'e' is defined but never used             @typescript-eslint/no-unused-vars
+   55:51  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   84:37  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  150:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  159:37  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  208:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\auth.ts
+  38:27  warning  '_' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  45:24  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\stores\ai-store.ts
+  43:30  warning  'prompt' is defined but never used      @typescript-eslint/no-unused-vars
+  51:25  warning  '_projectId' is defined but never used  @typescript-eslint/no-unused-vars
+  62:24  warning  '_projectId' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\stores\billing-store.ts
+   44:59  warning  'get' is defined but never used           @typescript-eslint/no-unused-vars
+  115:21  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\stores\marketplace-store.ts
+  28:31  warning  '_id' is defined but never used       @typescript-eslint/no-unused-vars
+  28:36  warning  '_message' is defined but never used  @typescript-eslint/no-unused-vars
+  33:24  warning  '_id' is defined but never used       @typescript-eslint/no-unused-vars
+  33:29  warning  '_rating' is defined but never used   @typescript-eslint/no-unused-vars
+  33:38  warning  '_review' is defined but never used   @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\stores\notification-store.ts
+  13:69  warning  'get' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Admin\.gemini\antigravity-ide\scratch\plancraftai\src\lib\stores\team-store.ts
+  14:53  warning  'get' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 362 problems (104 errors, 258 warnings)
+

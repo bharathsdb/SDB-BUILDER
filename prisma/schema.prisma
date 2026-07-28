@@ -1,0 +1,181 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      String   @default("user")
+  plan      String   @default("free")
+  verified  Boolean  @default(false)
+  company   String?
+  country   String?
+  phone     String?
+  bio       String?
+  avatar    String?
+  aiCreditsUsed   Int     @default(0)
+  aiCreditsTotal  Int     @default(50)
+  storageUsedMb   Int     @default(0)
+  storageQuotaMb  Int     @default(5120)
+  projectsCount   Int     @default(0)
+  createdAt String  @default("")
+  updatedAt String  @default("")
+
+  projects        Project[]
+  conversations   AIConversation[]
+  notifications   Notification[]
+  settings        Settings?
+  transactions    Transaction[]
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  name        String
+  description String   @default("")
+  userId      String
+  plotLength  Float    @default(0)
+  plotWidth   Float    @default(0)
+  facing      String   @default("North")
+  floors      Int      @default(1)
+  budgetTier  String   @default("Standard")
+  style       String   @default("Modern")
+  vastu       Boolean  @default(true)
+  status      String   @default("draft")
+  shared      Boolean  @default(false)
+  shareUrl    String?
+  viewCount   Int      @default(0)
+  vastuScore  Int?
+  sustainabilityScore Int?
+  stars       Int?
+  createdAt   String   @default("")
+  updatedAt   String   @default("")
+
+  user        User     @relation(fields: [userId], references: [id])
+  rooms       Room[]
+  materials   Material[]
+  costEstimate CostEstimate?
+  conversations AIConversation[]
+  exports     Export[]
+}
+
+model Room {
+  id       String @id @default(cuid())
+  name     String
+  width    Float  @default(0)
+  length   Float  @default(0)
+  level    Int    @default(0)
+  area     Float?
+  ceiling  Float?
+  type     String?
+  color    String?
+  projectId String
+
+  project Project @relation(fields: [projectId], references: [id])
+}
+
+model Material {
+  id             String  @id @default(cuid())
+  name           String
+  type           String
+  cost           Float   @default(0)
+  unit           String  @default("sqft")
+  brand          String?
+  color          String?
+  sustainability Int?
+  inStock        Boolean @default(true)
+  projectId      String
+
+  project Project @relation(fields: [projectId], references: [id])
+}
+
+model CostEstimate {
+  id         String  @id @default(cuid())
+  foundation Float   @default(0)
+  concrete   Float   @default(0)
+  steel      Float   @default(0)
+  brick      Float   @default(0)
+  flooring   Float   @default(0)
+  plumbing   Float   @default(0)
+  electrical Float   @default(0)
+  labor      Float   @default(0)
+  total      Float   @default(0)
+  contingency Float?
+  designFees  Float?
+  projectId   String  @unique
+
+  project Project @relation(fields: [projectId], references: [id])
+}
+
+model AIConversation {
+  id        String @id @default(cuid())
+  userId    String
+  projectId String?
+  role      String
+  content   String
+  createdAt String @default("")
+
+  user    User    @relation(fields: [userId], references: [id])
+  project Project? @relation(fields: [projectId], references: [id])
+}
+
+model Export {
+  id        String @id @default(cuid())
+  projectId String
+  type      String
+  format    String
+  url       String?
+  status    String @default("pending")
+  createdAt String @default("")
+
+  project Project @relation(fields: [projectId], references: [id])
+}
+
+model Settings {
+  id         String @id @default(cuid())
+  userId     String @unique
+  theme      String @default("system")
+  language   String @default("en")
+  units      String @default("imperial")
+  notificationsEnabled Boolean @default(true)
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Notification {
+  id        String @id @default(cuid())
+  userId    String
+  title     String
+  message   String
+  type      String @default("info")
+  read      Boolean @default(false)
+  category  String?
+  link      String?
+  createdAt String @default("")
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model Transaction {
+  id          String   @id @default(cuid())
+  userId      String
+  amount      Float
+  currency    String   @default("INR")
+  status      String   @default("PENDING") // PENDING, SUCCESS, FAILED, REFUNDED
+  orderId     String   @unique
+  txnId       String?  @unique
+  gatewayName String?
+  paymentMode String?
+  respMsg     String?
+  planName    String
+  createdAt   String   @default("")
+  updatedAt   String   @default("")
+
+  user        User     @relation(fields: [userId], references: [id])
+}

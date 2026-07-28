@@ -1,0 +1,11 @@
+# Don't deploy these to Vercel
+backend/
+selenium-tests/
+android/
+*.apk
+.env.local
+.env*.local
+*.log
+build-output.txt
+plancraft-master/backend/
+plancraft-master/selenium-tests/

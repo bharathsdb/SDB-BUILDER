@@ -1,0 +1,371 @@
+{
+  "totalTests": 20,
+  "totalPassed": 0,
+  "totalFailed": 20,
+  "passRate": 0,
+  "durationSec": 6.744,
+  "startTime": "2026-07-28T14:49:54.368Z",
+  "endTime": "2026-07-28T14:50:01.112Z",
+  "suites": [
+    {
+      "suite": "tests/01-landing-page.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.379,
+      "startTime": "2026-07-28T14:49:54.369Z",
+      "endTime": "2026-07-28T14:49:54.748Z",
+      "tests": [
+        {
+          "title": "tests/01-landing-page.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/02-navigation.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.353,
+      "startTime": "2026-07-28T14:49:54.749Z",
+      "endTime": "2026-07-28T14:49:55.102Z",
+      "tests": [
+        {
+          "title": "tests/02-navigation.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/03-authentication.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.361,
+      "startTime": "2026-07-28T14:49:55.102Z",
+      "endTime": "2026-07-28T14:49:55.463Z",
+      "tests": [
+        {
+          "title": "tests/03-authentication.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/04-dashboard.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.333,
+      "startTime": "2026-07-28T14:49:55.463Z",
+      "endTime": "2026-07-28T14:49:55.796Z",
+      "tests": [
+        {
+          "title": "tests/04-dashboard.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/05-projects.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.332,
+      "startTime": "2026-07-28T14:49:55.796Z",
+      "endTime": "2026-07-28T14:49:56.128Z",
+      "tests": [
+        {
+          "title": "tests/05-projects.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/06-generate-wizard.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.326,
+      "startTime": "2026-07-28T14:49:56.128Z",
+      "endTime": "2026-07-28T14:49:56.454Z",
+      "tests": [
+        {
+          "title": "tests/06-generate-wizard.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/07-settings.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.325,
+      "startTime": "2026-07-28T14:49:56.454Z",
+      "endTime": "2026-07-28T14:49:56.779Z",
+      "tests": [
+        {
+          "title": "tests/07-settings.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/08-public-pages.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.327,
+      "startTime": "2026-07-28T14:49:56.779Z",
+      "endTime": "2026-07-28T14:49:57.106Z",
+      "tests": [
+        {
+          "title": "tests/08-public-pages.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/09-admin-pages.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.34,
+      "startTime": "2026-07-28T14:49:57.106Z",
+      "endTime": "2026-07-28T14:49:57.446Z",
+      "tests": [
+        {
+          "title": "tests/09-admin-pages.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/10-edge-cases.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.333,
+      "startTime": "2026-07-28T14:49:57.447Z",
+      "endTime": "2026-07-28T14:49:57.780Z",
+      "tests": [
+        {
+          "title": "tests/10-edge-cases.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/11-workspace.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.332,
+      "startTime": "2026-07-28T14:49:57.781Z",
+      "endTime": "2026-07-28T14:49:58.113Z",
+      "tests": [
+        {
+          "title": "tests/11-workspace.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/12-subscription.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.346,
+      "startTime": "2026-07-28T14:49:58.113Z",
+      "endTime": "2026-07-28T14:49:58.459Z",
+      "tests": [
+        {
+          "title": "tests/12-subscription.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/13-user-full-flow.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.34,
+      "startTime": "2026-07-28T14:49:58.460Z",
+      "endTime": "2026-07-28T14:49:58.800Z",
+      "tests": [
+        {
+          "title": "tests/13-user-full-flow.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/14-admin-full-flow.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.329,
+      "startTime": "2026-07-28T14:49:58.800Z",
+      "endTime": "2026-07-28T14:49:59.129Z",
+      "tests": [
+        {
+          "title": "tests/14-admin-full-flow.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/15-all-panels.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.325,
+      "startTime": "2026-07-28T14:49:59.129Z",
+      "endTime": "2026-07-28T14:49:59.454Z",
+      "tests": [
+        {
+          "title": "tests/15-all-panels.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/16-responsive-design.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.328,
+      "startTime": "2026-07-28T14:49:59.454Z",
+      "endTime": "2026-07-28T14:49:59.782Z",
+      "tests": [
+        {
+          "title": "tests/16-responsive-design.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/17-analysis-modules.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.328,
+      "startTime": "2026-07-28T14:49:59.783Z",
+      "endTime": "2026-07-28T14:50:00.111Z",
+      "tests": [
+        {
+          "title": "tests/17-analysis-modules.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/18-api-endpoints.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.335,
+      "startTime": "2026-07-28T14:50:00.112Z",
+      "endTime": "2026-07-28T14:50:00.447Z",
+      "tests": [
+        {
+          "title": "tests/18-api-endpoints.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/19-export-management.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.327,
+      "startTime": "2026-07-28T14:50:00.447Z",
+      "endTime": "2026-07-28T14:50:00.774Z",
+      "tests": [
+        {
+          "title": "tests/19-export-management.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "suite": "tests/20-edge-failures.test.js",
+      "total": 1,
+      "passed": 0,
+      "failed": 1,
+      "passRate": 0,
+      "durationSec": 0.336,
+      "startTime": "2026-07-28T14:50:00.775Z",
+      "endTime": "2026-07-28T14:50:01.111Z",
+      "tests": [
+        {
+          "title": "tests/20-edge-failures.test.js - Parse error",
+          "status": "FAIL",
+          "error": "Could not parse JSON output",
+          "duration": 0
+        }
+      ]
+    }
+  ]
+}

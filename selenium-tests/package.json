@@ -1,0 +1,27 @@
+{
+  "name": "plancraftai-selenium-tests",
+  "version": "1.0.0",
+  "description": "Selenium E2E test suite for PlanCraftAI",
+  "scripts": {
+    "test": "node run-all.js",
+    "test:landing": "mocha tests/01-landing-page.test.js --timeout 60000",
+    "test:navigation": "mocha tests/02-navigation.test.js --timeout 60000",
+    "test:auth": "mocha tests/03-authentication.test.js --timeout 60000",
+    "test:dashboard": "mocha tests/04-dashboard.test.js --timeout 60000",
+    "test:projects": "mocha tests/05-projects.test.js --timeout 60000",
+    "test:generate": "mocha tests/06-generate-wizard.test.js --timeout 60000",
+    "test:settings": "mocha tests/07-settings.test.js --timeout 60000",
+    "test:public": "mocha tests/08-public-pages.test.js --timeout 60000",
+    "test:admin": "mocha tests/09-admin-pages.test.js --timeout 60000",
+    "test:edge": "mocha tests/10-edge-cases.test.js --timeout 60000",
+    "test:workspace": "mocha tests/11-workspace.test.js --timeout 60000",
+    "test:subscription": "mocha tests/12-subscription.test.js --timeout 60000"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}

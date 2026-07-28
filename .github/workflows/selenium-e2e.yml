@@ -1,0 +1,265 @@
+name: "PlanCraftAI - Full E2E Test Suite"
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+  workflow_dispatch:
+
+jobs:
+  # ══════════════════════════════════════════════════════════════════════════
+  # JOB 1 — TypeScript Build Check
+  # ══════════════════════════════════════════════════════════════════════════
+  build-check:
+    name: "TypeScript Build"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run production build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_API_URL: "http://localhost:8000"
+          NEXT_TELEMETRY_DISABLED: "1"
+
+  # ══════════════════════════════════════════════════════════════════════════
+  # JOB 2 — E2E Selenium Tests
+  # ══════════════════════════════════════════════════════════════════════════
+  e2e-tests:
+    name: "E2E Selenium Tests"
+    runs-on: ubuntu-latest
+    needs: build-check
+
+    steps:
+      # ── Checkout ────────────────────────────────────────────────────────────
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      # ── Node.js ─────────────────────────────────────────────────────────────
+      - name: Setup Node.js 24
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      # ── Python ──────────────────────────────────────────────────────────────
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      # ── Chrome ──────────────────────────────────────────────────────────────
+      - name: Install Google Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | \
+            sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update -q
+          sudo apt-get install -y google-chrome-stable
+          google-chrome --version
+          echo "[Setup] Chrome installed successfully"
+
+      # ── Backend deps ─────────────────────────────────────────────────────────
+      - name: Install backend dependencies
+        run: |
+          echo "[Setup] Installing Python backend dependencies..."
+          if [ -f backend/requirements.txt ]; then
+            pip install -r backend/requirements.txt --quiet
+            echo "[Setup] Backend requirements installed"
+          else
+            pip install fastapi uvicorn python-jose passlib python-multipart sqlalchemy --quiet
+            echo "[Setup] Minimal backend deps installed"
+          fi
+
+      # ── Frontend deps ────────────────────────────────────────────────────────
+      - name: Install frontend dependencies
+        run: |
+          echo "[Setup] Installing Next.js frontend dependencies..."
+          npm ci
+          echo "[Setup] Frontend dependencies installed"
+
+      # ── Selenium test deps ───────────────────────────────────────────────────
+      - name: Install Selenium test dependencies
+        run: |
+          echo "[Setup] Installing Selenium test runner..."
+          cd selenium-tests && npm install
+          echo "[Setup] Selenium dependencies installed"
+
+      # ── Environment files ────────────────────────────────────────────────────
+      - name: Create environment files
+        run: |
+          echo "[Setup] Creating .env.local..."
+          cat > .env.local << EOF
+          NEXT_PUBLIC_API_URL=http://localhost:8000
+          NEXT_TELEMETRY_DISABLED=1
+          APK_DOWNLOAD_URL=
+          EOF
+          if [ -d backend ]; then
+            cat > backend/.env << EOF
+          DATABASE_URL=sqlite:///./plancraft_test.db
+          JWT_SECRET=ci-test-jwt-secret-do-not-use-in-prod
+          ENVIRONMENT=test
+          CORS_ORIGINS=http://localhost:3000
+          EOF
+          fi
+          echo "[Setup] Environment files created"
+
+      # ── Start Backend ────────────────────────────────────────────────────────
+      - name: Start FastAPI backend server
+        run: |
+          echo "[Server] Starting FastAPI backend on port 8000..."
+          if [ -d backend ]; then
+            cd backend
+            if [ -d .venv ]; then
+              .venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000 \
+                --log-level debug > ../backend-server.log 2>&1 &
+            else
+              uvicorn app.main:app --host 0.0.0.0 --port 8000 \
+                --log-level debug > ../backend-server.log 2>&1 &
+            fi
+            echo "[Server] Backend started"
+          else
+            echo "[Server] No backend folder found - skipping"
+          fi
+
+      # ── Start Frontend ───────────────────────────────────────────────────────
+      - name: Start Next.js frontend server
+        run: |
+          echo "[Server] Building Next.js frontend..."
+          npm run build
+          echo "[Server] Starting Next.js frontend on port 3000..."
+          npm start > frontend-server.log 2>&1 &
+          echo "[Server] Frontend started"
+        env:
+          NEXT_PUBLIC_API_URL: "http://localhost:8000"
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      # ── Wait for ready ───────────────────────────────────────────────────────
+      - name: Wait for servers to be ready
+        run: |
+          echo "[Wait] Waiting for frontend at http://localhost:3000 ..."
+          for i in $(seq 1 60); do
+            if curl -sf http://localhost:3000 > /dev/null 2>&1; then
+              echo "[Wait] Frontend is up after ${i}x2s"
+              break
+            fi
+            echo "[Wait] ${i}/60 - not ready yet..."
+            sleep 2
+          done
+
+          echo "[Wait] Checking backend at http://localhost:8000 ..."
+          for i in $(seq 1 15); do
+            if curl -sf http://localhost:8000/docs > /dev/null 2>&1 || \
+               curl -sf http://localhost:8000/health > /dev/null 2>&1; then
+              echo "[Wait] Backend is up after ${i}x2s"
+              break
+            fi
+            echo "[Wait] Backend not ready (${i}/15)"
+            sleep 2
+          done
+          echo "[Wait] All servers ready - starting tests"
+
+      # ── SUITE 1: All E2E Tests ──────────────────────────────────────────────
+      - name: "E2E - All Tests"
+        id: all_tests
+        continue-on-error: true
+        run: |
+          echo "============================================================"
+          echo "  SUITE: All E2E Tests"
+          echo "============================================================"
+          cd selenium-tests && npm run test 2>&1 | tee ../e2e-tests.log
+        env:
+          BASE_URL: "http://localhost:3000"
+          DEMO_USER_EMAIL: ${{ secrets.DEMO_USER_EMAIL != '' && secrets.DEMO_USER_EMAIL || 'demo@plancraft.ai' }}
+          DEMO_USER_PASSWORD: ${{ secrets.DEMO_USER_PASSWORD != '' && secrets.DEMO_USER_PASSWORD || 'Demo@1234' }}
+          DEMO_ADMIN_EMAIL: ${{ secrets.DEMO_ADMIN_EMAIL != '' && secrets.DEMO_ADMIN_EMAIL || 'admin@plancraft.ai' }}
+          DEMO_ADMIN_PASSWORD: ${{ secrets.DEMO_ADMIN_PASSWORD != '' && secrets.DEMO_ADMIN_PASSWORD || 'Admin@1234' }}
+
+      # ── Dump Backend Logs ────────────────────────────────────────────────────
+      - name: "Dump Backend Server Logs"
+        if: always()
+        run: |
+          echo "============================================================"
+          echo "  BACKEND SERVER LOGS (FastAPI stdout/stderr)"
+          echo "============================================================"
+          if [ -f backend-server.log ]; then
+            echo "[Backend Log] $(wc -l < backend-server.log) lines total"
+            echo ""
+            cat backend-server.log
+          else
+            echo "[Backend Log] No backend-server.log found"
+          fi
+
+      # ── Dump Frontend Logs ───────────────────────────────────────────────────
+      - name: "Dump Frontend Server Logs"
+        if: always()
+        run: |
+          echo "============================================================"
+          echo "  FRONTEND SERVER LOGS (Next.js stdout/stderr)"
+          echo "============================================================"
+          if [ -f frontend-server.log ]; then
+            echo "[Frontend Log] $(wc -l < frontend-server.log) lines total"
+            echo ""
+            tail -200 frontend-server.log
+          else
+            echo "[Frontend Log] No frontend-server.log found"
+          fi
+
+      # ── Summary ──────────────────────────────────────────────────────────────
+      - name: "Generate Test Summary"
+        if: always()
+        run: |
+          echo "============================================================"
+          echo "  PLANCRAFT AI - E2E TEST SUITE SUMMARY"
+          echo "  Run: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "  Commit: $GITHUB_SHA"
+          echo "  Branch: $GITHUB_REF_NAME"
+          echo "============================================================"
+          echo ""
+          echo "  All Tests Result -> ${{ steps.all_tests.outcome }}"
+          echo "============================================================"
+
+          {
+            echo "## PlanCraftAI E2E Test Results"
+            echo ""
+            echo "| Suite | Result |"
+            echo "|-------|--------|"
+            echo "| All E2E Tests | ${{ steps.all_tests.outcome }} |"
+            echo ""
+            echo "**Commit**: `$GITHUB_SHA`"
+            echo "**Branch**: `$GITHUB_REF_NAME`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # ── Upload Artifacts ─────────────────────────────────────────────────────
+      - name: "Upload Test Artifacts"
+        uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: e2e-test-artifacts
+          retention-days: 30
+          path: |
+            selenium-tests/reports/
+            selenium-tests/screenshots/
+            backend-server.log
+            frontend-server.log
+            e2e-tests.log
+
+      # ── Check Test Failures ──────────────────────────────────────────────────
+      - name: "Check Test Failures"
+        if: always()
+        run: |
+          if [ "${{ steps.all_tests.outcome }}" == "failure" ]; then
+            echo "::error::One or more test suites failed!"
+            exit 1
+          fi

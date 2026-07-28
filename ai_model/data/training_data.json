@@ -1,0 +1,6841 @@
+[
+  {
+    "plot_length": 74.7,
+    "plot_width": 33.4,
+    "facing": "South",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.7,
+        "length": 13.9,
+        "type": "bedroom",
+        "area": 247
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.8,
+        "length": 16.8,
+        "type": "bedroom",
+        "area": 181
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.3,
+        "length": 17.4,
+        "type": "bedroom",
+        "area": 301
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 13.2,
+        "length": 16.0,
+        "type": "bedroom",
+        "area": 211
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 17.5,
+        "length": 13.3,
+        "type": "bedroom",
+        "area": 234
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.3,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.3,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.6,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 77
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 8.9,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 76
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 77.85958463777271,
+      "efficiency_score": 70.44521327262837
+    }
+  },
+  {
+    "plot_length": 96.6,
+    "plot_width": 68.0,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 1,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.4,
+        "length": 18.8,
+        "type": "bedroom",
+        "area": 196
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.1,
+        "length": 7.5,
+        "type": "bathroom",
+        "area": 38
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.3,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.0,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 7.3,
+        "length": 10.0,
+        "type": "bathroom",
+        "area": 73
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 25.3067992611545,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 78.06591013948487,
+      "efficiency_score": 96.80419402492585
+    }
+  },
+  {
+    "plot_length": 81.6,
+    "plot_width": 54.1,
+    "facing": "South",
+    "budget_tier": "Ultra Luxury",
+    "style": "Contemporary",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.6,
+        "length": 16.7,
+        "type": "bedroom",
+        "area": 277
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.4,
+        "length": 17.8,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.4,
+        "length": 18.3,
+        "type": "bedroom",
+        "area": 319
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.7,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 317
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 16.5,
+        "length": 19.8,
+        "type": "bedroom",
+        "area": 326
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.5,
+        "length": 8.1,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.9,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 59
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.9,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.2,
+        "length": 6.4,
+        "type": "bathroom",
+        "area": 39
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 94.93411695540678,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 82.57231351880364,
+      "efficiency_score": 99.66362733927274
+    }
+  },
+  {
+    "plot_length": 71.7,
+    "plot_width": 37.2,
+    "facing": "West",
+    "budget_tier": "Ultra Luxury",
+    "style": "Mediterranean",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.0,
+        "length": 19.6,
+        "type": "bedroom",
+        "area": 215
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.4,
+        "length": 6.8,
+        "type": "bathroom",
+        "area": 37
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.2,
+        "length": 9.1,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 53.94124242002247,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 85.0242037689868,
+      "efficiency_score": 82.88397181127219
+    }
+  },
+  {
+    "plot_length": 83.7,
+    "plot_width": 53.1,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Modern",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.6,
+        "length": 16.3,
+        "type": "bedroom",
+        "area": 221
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.2,
+        "length": 14.4,
+        "type": "bedroom",
+        "area": 218
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.3,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 33
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.6,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 42.21744054247692,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 71.7005725567527,
+      "efficiency_score": 96.96353217063584
+    }
+  },
+  {
+    "plot_length": 31.2,
+    "plot_width": 67.5,
+    "facing": "East",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.8,
+        "length": 18.5,
+        "type": "bedroom",
+        "area": 329
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.8,
+        "length": 19.7,
+        "type": "bedroom",
+        "area": 213
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.3,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 258
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 12.9,
+        "length": 18.7,
+        "type": "bedroom",
+        "area": 241
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.3,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 51
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.0,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 43
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.0,
+        "length": 7.5,
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.8,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 64
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 62.22713823517093,
+      "efficiency_score": 58.47555644669574
+    }
+  },
+  {
+    "plot_length": 70.1,
+    "plot_width": 24.7,
+    "facing": "North",
+    "budget_tier": "Ultra Luxury",
+    "style": "Contemporary",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.5,
+        "length": 12.1,
+        "type": "bedroom",
+        "area": 163
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.3,
+        "length": 16.2,
+        "type": "bedroom",
+        "area": 215
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.5,
+        "length": 10.0,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.4,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.1,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 74.76412116829714,
+      "efficiency_score": 46.72103953477558
+    }
+  },
+  {
+    "plot_length": 95.2,
+    "plot_width": 26.0,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Mediterranean",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.7,
+        "length": 16.8,
+        "type": "bedroom",
+        "area": 247
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.6,
+        "length": 13.5,
+        "type": "bedroom",
+        "area": 170
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.2,
+        "length": 13.7,
+        "type": "bedroom",
+        "area": 167
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.9,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 226
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.0,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.8,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 83
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.0,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 5.4,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 77.81550662602173,
+      "efficiency_score": 13.656464581783789
+    }
+  },
+  {
+    "plot_length": 51.1,
+    "plot_width": 78.2,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.9,
+        "length": 18.1,
+        "type": "bedroom",
+        "area": 197
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 11.4,
+        "length": 18.1,
+        "type": "bedroom",
+        "area": 205
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.2,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 242
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.3,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 41
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.5,
+        "length": 6.9,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.9,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 57
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 60.75883533936886,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 64.9145585187513,
+      "efficiency_score": 66.16410495261526
+    }
+  },
+  {
+    "plot_length": 82.3,
+    "plot_width": 45.9,
+    "facing": "East",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.2,
+        "length": 16.2,
+        "type": "bedroom",
+        "area": 213
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.4,
+        "length": 18.2,
+        "type": "bedroom",
+        "area": 317
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.7,
+        "length": 16.6,
+        "type": "bedroom",
+        "area": 194
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.2,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 37
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.6,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.5,
+        "length": 8.4,
+        "type": "bathroom",
+        "area": 71
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 5.4,
+        "length": 9.9,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 72.20000542446869,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 84.3982480237799,
+      "efficiency_score": 88.20857032647929
+    }
+  },
+  {
+    "plot_length": 75.7,
+    "plot_width": 35.3,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.2,
+        "length": 17.5,
+        "type": "bedroom",
+        "area": 283
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.3,
+        "length": 16.0,
+        "type": "bedroom",
+        "area": 277
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.1,
+        "length": 12.7,
+        "type": "bedroom",
+        "area": 128
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.6,
+        "length": 17.5,
+        "type": "bedroom",
+        "area": 309
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 14.6,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 249
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.6,
+        "length": 9.0,
+        "type": "bathroom",
+        "area": 59
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.4,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.9,
+        "length": 6.0,
+        "type": "bathroom",
+        "area": 36
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 7.5,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 68.10872862080976,
+      "efficiency_score": 74.20870094803563
+    }
+  },
+  {
+    "plot_length": 65.7,
+    "plot_width": 74.4,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Scandinavian",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.0,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 223
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.4,
+        "length": 12.8,
+        "type": "bedroom",
+        "area": 160
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.0,
+        "length": 17.2,
+        "type": "bedroom",
+        "area": 241
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.3,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.7,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.2,
+        "length": 7.3,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 48.795026880344075,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 62.42753415520558,
+      "efficiency_score": 75.35160825362368
+    }
+  },
+  {
+    "plot_length": 49.4,
+    "plot_width": 25.9,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.6,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 201
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.1,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 33
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 89.5578831232288,
+      "efficiency_score": 83.78047761737827
+    }
+  },
+  {
+    "plot_length": 54.0,
+    "plot_width": 76.5,
+    "facing": "East",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.5,
+        "length": 13.8,
+        "type": "bedroom",
+        "area": 214
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 11.9,
+        "length": 18.3,
+        "type": "bedroom",
+        "area": 219
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.9,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 169
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.4,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 52.56757356272207,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 69.10364204386008,
+      "efficiency_score": 68.21776982446025
+    }
+  },
+  {
+    "plot_length": 78.1,
+    "plot_width": 31.5,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.4,
+        "length": 19.5,
+        "type": "bedroom",
+        "area": 281
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.6,
+        "length": 16.3,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.6,
+        "length": 12.7,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.0,
+        "length": 15.2,
+        "type": "bedroom",
+        "area": 167
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 11.6,
+        "length": 16.6,
+        "type": "bedroom",
+        "area": 192
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.7,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 83
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.0,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 70.15545950586696,
+      "efficiency_score": 60.73336939128504
+    }
+  },
+  {
+    "plot_length": 84.6,
+    "plot_width": 34.0,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Scandinavian",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.4,
+        "length": 14.0,
+        "type": "bedroom",
+        "area": 229
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.5,
+        "length": 16.0,
+        "type": "bedroom",
+        "area": 280
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.6,
+        "length": 20.0,
+        "type": "bedroom",
+        "area": 272
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 16.6,
+        "length": 14.2,
+        "type": "bedroom",
+        "area": 236
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.3,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 73
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.5,
+        "length": 6.6,
+        "type": "bathroom",
+        "area": 36
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 69.05721990176089,
+      "efficiency_score": 60.40493488254077
+    }
+  },
+  {
+    "plot_length": 35.4,
+    "plot_width": 73.2,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.6,
+        "length": 18.6,
+        "type": "bedroom",
+        "area": 233
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.6,
+        "length": 14.3,
+        "type": "bedroom",
+        "area": 209
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 16.2,
+        "length": 14.9,
+        "type": "bedroom",
+        "area": 240
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 18.0,
+        "length": 13.1,
+        "type": "bedroom",
+        "area": 236
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.6,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 76.10590476970978,
+      "efficiency_score": 59.36504551529763
+    }
+  },
+  {
+    "plot_length": 48.4,
+    "plot_width": 63.7,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Contemporary",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.7,
+        "length": 19.6,
+        "type": "bedroom",
+        "area": 269
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.8,
+        "length": 13.7,
+        "type": "bedroom",
+        "area": 147
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.8,
+        "length": 15.8,
+        "type": "bedroom",
+        "area": 171
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.4,
+        "length": 19.2,
+        "type": "bedroom",
+        "area": 219
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.2,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.9,
+        "length": 7.9,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.3,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.4,
+        "length": 9.0,
+        "type": "bathroom",
+        "area": 57
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 94.57275429484812,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 62.82294904200106,
+      "efficiency_score": 70.42435803688979
+    }
+  },
+  {
+    "plot_length": 55.0,
+    "plot_width": 48.6,
+    "facing": "South",
+    "budget_tier": "Ultra Luxury",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.6,
+        "length": 16.8,
+        "type": "bedroom",
+        "area": 229
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.8,
+        "length": 13.0,
+        "type": "bedroom",
+        "area": 166
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 15.7,
+        "length": 18.9,
+        "type": "bedroom",
+        "area": 297
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.7,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 76
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.0,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 75
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 94.58648677514888,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 94.83335269661457,
+      "efficiency_score": 85.2784036908077
+    }
+  },
+  {
+    "plot_length": 40.8,
+    "plot_width": 31.9,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Scandinavian",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.0,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 221
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.1,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 223
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.1,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 189
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 9.6,
+        "type": "bathroom",
+        "area": 86
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.7,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 57
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 93.82492734648397,
+      "efficiency_score": 91.26003223376404
+    }
+  },
+  {
+    "plot_length": 34.9,
+    "plot_width": 23.8,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 2,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.2,
+        "length": 13.1,
+        "type": "bedroom",
+        "area": 146
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.3,
+        "length": 15.6,
+        "type": "bedroom",
+        "area": 192
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.6,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.9,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.6,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 36
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 73.2869793627246,
+      "efficiency_score": 98.58699530982875
+    }
+  },
+  {
+    "plot_length": 44.0,
+    "plot_width": 64.5,
+    "facing": "North",
+    "budget_tier": "Premium",
+    "style": "Mediterranean",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.7,
+        "length": 14.9,
+        "type": "bedroom",
+        "area": 174
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.4,
+        "length": 15.7,
+        "type": "bedroom",
+        "area": 259
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.3,
+        "length": 17.5,
+        "type": "bedroom",
+        "area": 233
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.5,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 80.39667452087225,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 63.64041589642023,
+      "efficiency_score": 67.29055994307238
+    }
+  },
+  {
+    "plot_length": 84.1,
+    "plot_width": 47.8,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Farmhouse",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.0,
+        "length": 15.6,
+        "type": "bedroom",
+        "area": 156
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.9,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 67
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 31.950147427035066,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 90.52856622604511,
+      "efficiency_score": 89.6790783973749
+    }
+  },
+  {
+    "plot_length": 47.7,
+    "plot_width": 23.8,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.1,
+        "length": 19.2,
+        "type": "bedroom",
+        "area": 252
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.8,
+        "length": 8.0,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 70.39140462833957,
+      "efficiency_score": 79.75653810234184
+    }
+  },
+  {
+    "plot_length": 93.5,
+    "plot_width": 55.7,
+    "facing": "East",
+    "budget_tier": "Premium",
+    "style": "Mediterranean",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.9,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 161
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.5,
+        "length": 15.2,
+        "type": "bedroom",
+        "area": 265
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.5,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.4,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.9,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 59
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 38.844775924767255,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 68.14172094567746,
+      "efficiency_score": 92.86832047351551
+    }
+  },
+  {
+    "plot_length": 92.1,
+    "plot_width": 29.0,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.5,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 231
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 18.0,
+        "length": 19.2,
+        "type": "bedroom",
+        "area": 344
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.6,
+        "length": 13.7,
+        "type": "bedroom",
+        "area": 158
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.1,
+        "length": 7.7,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 90.28180063828597,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 93.02824764975983,
+      "efficiency_score": 33.212617116863164
+    }
+  },
+  {
+    "plot_length": 57.1,
+    "plot_width": 73.6,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.1,
+        "length": 13.6,
+        "type": "bedroom",
+        "area": 152
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.0,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 29.504529797959545,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 87.71662477394736,
+      "efficiency_score": 71.07309196638116
+    }
+  },
+  {
+    "plot_length": 51.9,
+    "plot_width": 56.6,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.8,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 194
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.9,
+        "length": 14.9,
+        "type": "bedroom",
+        "area": 193
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.0,
+        "length": 15.5,
+        "type": "bedroom",
+        "area": 202
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.1,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 292
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 16.1,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 308
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.5,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 41
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.2,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 93.48218692574316,
+      "efficiency_score": 76.6302242462262
+    }
+  },
+  {
+    "plot_length": 88.0,
+    "plot_width": 61.1,
+    "facing": "West",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.8,
+        "length": 17.2,
+        "type": "bedroom",
+        "area": 237
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.4,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.3,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 39
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 28.1590038515697,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 78.6137715182439,
+      "efficiency_score": 97.58363641212213
+    }
+  },
+  {
+    "plot_length": 92.9,
+    "plot_width": 78.8,
+    "facing": "East",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.5,
+        "length": 19.7,
+        "type": "bedroom",
+        "area": 226
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.2,
+        "length": 16.5,
+        "type": "bedroom",
+        "area": 168
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.6,
+        "length": 12.4,
+        "type": "bedroom",
+        "area": 157
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.8,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.8,
+        "length": 9.0,
+        "type": "bathroom",
+        "area": 70
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.9,
+        "length": 6.8,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 31.082082616432402,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 82.45300960808794,
+      "efficiency_score": 87.19358648748016
+    }
+  },
+  {
+    "plot_length": 94.0,
+    "plot_width": 69.1,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.9,
+        "length": 19.2,
+        "type": "bedroom",
+        "area": 208
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.9,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 191
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.7,
+        "length": 14.4,
+        "type": "bedroom",
+        "area": 169
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 14.0,
+        "length": 17.8,
+        "type": "bedroom",
+        "area": 249
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.1,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.0,
+        "length": 6.6,
+        "type": "bathroom",
+        "area": 33
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 40.70766789520055,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 80.11326121595344,
+      "efficiency_score": 94.44736304965411
+    }
+  },
+  {
+    "plot_length": 37.8,
+    "plot_width": 51.1,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.8,
+        "length": 16.3,
+        "type": "bedroom",
+        "area": 289
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.6,
+        "length": 19.6,
+        "type": "bedroom",
+        "area": 305
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.3,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 68.2548019113895,
+      "efficiency_score": 69.56778820969177
+    }
+  },
+  {
+    "plot_length": 51.7,
+    "plot_width": 33.6,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.1,
+        "length": 16.6,
+        "type": "bedroom",
+        "area": 234
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.6,
+        "length": 12.9,
+        "type": "bedroom",
+        "area": 188
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.2,
+        "length": 14.5,
+        "type": "bedroom",
+        "area": 249
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.5,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.8,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.5,
+        "length": 6.9,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 84.07676810214215,
+      "efficiency_score": 98.44135426975147
+    }
+  },
+  {
+    "plot_length": 79.9,
+    "plot_width": 58.0,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Scandinavian",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.0,
+        "length": 18.7,
+        "type": "bedroom",
+        "area": 263
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.9,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 32.22549514112729,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 63.67288115046193,
+      "efficiency_score": 95.1152153824147
+    }
+  },
+  {
+    "plot_length": 56.5,
+    "plot_width": 76.8,
+    "facing": "East",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.7,
+        "length": 13.6,
+        "type": "bedroom",
+        "area": 240
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.3,
+        "length": 15.6,
+        "type": "bedroom",
+        "area": 207
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.6,
+        "length": 12.8,
+        "type": "bedroom",
+        "area": 136
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 15.1,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 272
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 17.6,
+        "length": 17.9,
+        "type": "bedroom",
+        "area": 316
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.7,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 64
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 76.23256481329705,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 74.60654037479816,
+      "efficiency_score": 69.44150633791462
+    }
+  },
+  {
+    "plot_length": 60.2,
+    "plot_width": 66.9,
+    "facing": "North",
+    "budget_tier": "Premium",
+    "style": "Farmhouse",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.7,
+        "length": 14.5,
+        "type": "bedroom",
+        "area": 155
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.0,
+        "length": 14.6,
+        "type": "bedroom",
+        "area": 146
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.0,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.1,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.8,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.8,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.0,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 60.02803873904306,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 88.02660608086185,
+      "efficiency_score": 75.94992715555684
+    }
+  },
+  {
+    "plot_length": 93.0,
+    "plot_width": 36.4,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Scandinavian",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.0,
+        "length": 19.5,
+        "type": "bedroom",
+        "area": 254
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.9,
+        "length": 16.0,
+        "type": "bedroom",
+        "area": 271
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.3,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 193
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 14.5,
+        "length": 15.8,
+        "type": "bedroom",
+        "area": 230
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.9,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 44
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.2,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.5,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 37
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 5.8,
+        "length": 6.4,
+        "type": "bathroom",
+        "area": 37
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 91.84685851185205,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 88.51993960229792,
+      "efficiency_score": 57.858345842768074
+    }
+  },
+  {
+    "plot_length": 88.7,
+    "plot_width": 24.8,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.2,
+        "length": 12.2,
+        "type": "bedroom",
+        "area": 210
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.9,
+        "length": 14.9,
+        "type": "bedroom",
+        "area": 222
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.6,
+        "length": 19.9,
+        "type": "bedroom",
+        "area": 290
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.4,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.4,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 86.52929523776304,
+      "efficiency_score": 16.74385928769929
+    }
+  },
+  {
+    "plot_length": 59.0,
+    "plot_width": 57.1,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.2,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 291
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.8,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 234
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.8,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.6,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 72
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.1,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 63
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 67.97875090126506,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 80.0083720299178,
+      "efficiency_score": 81.3965046559552
+    }
+  },
+  {
+    "plot_length": 39.3,
+    "plot_width": 24.5,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Mediterranean",
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.6,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 132
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.2,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 51
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.7,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.6,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 65.67311907060146,
+      "efficiency_score": 95.94551871340478
+    }
+  },
+  {
+    "plot_length": 76.5,
+    "plot_width": 22.8,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.6,
+        "length": 18.5,
+        "type": "bedroom",
+        "area": 232
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.9,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 303
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 15.5,
+        "length": 17.3,
+        "type": "bedroom",
+        "area": 268
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 10.2,
+        "length": 18.2,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.4,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 33
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 64.80345466923303,
+      "efficiency_score": 25.535885851727556
+    }
+  },
+  {
+    "plot_length": 89.5,
+    "plot_width": 57.9,
+    "facing": "South",
+    "budget_tier": "Ultra Luxury",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.4,
+        "length": 17.8,
+        "type": "bedroom",
+        "area": 309
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.2,
+        "length": 14.7,
+        "type": "bedroom",
+        "area": 209
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.9,
+        "length": 17.9,
+        "type": "bedroom",
+        "area": 322
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 15.9,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 270
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.7,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 44
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.2,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 62.806328588725535,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 62.38067400451638,
+      "efficiency_score": 98.20486238185428
+    }
+  },
+  {
+    "plot_length": 50.0,
+    "plot_width": 37.0,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.3,
+        "length": 15.6,
+        "type": "bedroom",
+        "area": 254
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.1,
+        "length": 15.4,
+        "type": "bedroom",
+        "area": 187
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 16.9,
+        "length": 19.5,
+        "type": "bedroom",
+        "area": 330
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 15.0,
+        "length": 18.6,
+        "type": "bedroom",
+        "area": 278
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.8,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 55
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 91.28089197117897,
+      "efficiency_score": 94.03112759514774
+    }
+  },
+  {
+    "plot_length": 63.2,
+    "plot_width": 40.5,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.8,
+        "length": 19.7,
+        "type": "bedroom",
+        "area": 251
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.7,
+        "length": 13.4,
+        "type": "bedroom",
+        "area": 171
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 74
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 71.51713734990749,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 87.60062452875744,
+      "efficiency_score": 97.54649396516533
+    }
+  },
+  {
+    "plot_length": 88.6,
+    "plot_width": 66.0,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.5,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 244
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.5,
+        "length": 16.3,
+        "type": "bedroom",
+        "area": 236
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 15.8,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 222
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 14.1,
+        "length": 18.1,
+        "type": "bedroom",
+        "area": 255
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 16.5,
+        "length": 20.0,
+        "type": "bedroom",
+        "area": 331
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.2,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.3,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 60
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.0,
+        "length": 7.9,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 8.8,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 74
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 66.5655736591886,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 68.6739979386554,
+      "efficiency_score": 93.71410465925207
+    }
+  },
+  {
+    "plot_length": 54.2,
+    "plot_width": 26.0,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.1,
+        "length": 13.8,
+        "type": "bedroom",
+        "area": 139
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 11.8,
+        "length": 19.9,
+        "type": "bedroom",
+        "area": 234
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.5,
+        "length": 19.8,
+        "type": "bedroom",
+        "area": 268
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 13.4,
+        "length": 12.6,
+        "type": "bedroom",
+        "area": 169
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 72.75568279238192,
+      "efficiency_score": 76.69998740543582
+    }
+  },
+  {
+    "plot_length": 99.4,
+    "plot_width": 53.9,
+    "facing": "West",
+    "budget_tier": "Ultra Luxury",
+    "style": "Mediterranean",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.5,
+        "length": 16.1,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.6,
+        "length": 15.2,
+        "type": "bedroom",
+        "area": 207
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.1,
+        "length": 9.6,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.9,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 86
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 36.08587563528002,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 67.2561187059435,
+      "efficiency_score": 86.19685328572177
+    }
+  },
+  {
+    "plot_length": 97.7,
+    "plot_width": 53.9,
+    "facing": "North",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.6,
+        "length": 17.8,
+        "type": "bedroom",
+        "area": 261
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.8,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 59
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.1,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 43
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.6,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 31.563981571399374,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 64.79076147955928,
+      "efficiency_score": 87.4296206318599
+    }
+  },
+  {
+    "plot_length": 36.4,
+    "plot_width": 74.0,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Mediterranean",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.4,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 217
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.7,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 233
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 77
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.8,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.4,
+        "length": 9.9,
+        "type": "bathroom",
+        "area": 84
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 81.0502055984736,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 92.1605305551823,
+      "efficiency_score": 59.68511587756379
+    }
+  },
+  {
+    "plot_length": 58.4,
+    "plot_width": 25.1,
+    "facing": "East",
+    "budget_tier": "Economy",
+    "style": "Scandinavian",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.8,
+        "length": 18.5,
+        "type": "bedroom",
+        "area": 292
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.6,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 180
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.7,
+        "length": 9.1,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.1,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 82.283464206798,
+      "efficiency_score": 66.73751971364494
+    }
+  },
+  {
+    "plot_length": 81.4,
+    "plot_width": 46.1,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Scandinavian",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.1,
+        "length": 12.9,
+        "type": "bedroom",
+        "area": 168
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.5,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 247
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.8,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 47.14160459321136,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 81.45781303588633,
+      "efficiency_score": 89.362443813256
+    }
+  },
+  {
+    "plot_length": 71.8,
+    "plot_width": 23.2,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.6,
+        "length": 15.1,
+        "type": "bedroom",
+        "area": 206
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.8,
+        "length": 13.4,
+        "type": "bedroom",
+        "area": 212
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.6,
+        "length": 13.7,
+        "type": "bedroom",
+        "area": 241
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.9,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 67
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.2,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.5,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 5.2,
+        "length": 7.9,
+        "type": "bathroom",
+        "area": 42
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 86.1280578516336,
+      "efficiency_score": 36.30035024613372
+    }
+  },
+  {
+    "plot_length": 95.4,
+    "plot_width": 24.8,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.1,
+        "length": 12.2,
+        "type": "bedroom",
+        "area": 135
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.2,
+        "length": 13.1,
+        "type": "bedroom",
+        "area": 226
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 16.1,
+        "length": 19.1,
+        "type": "bedroom",
+        "area": 307
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.0,
+        "length": 15.3,
+        "type": "bedroom",
+        "area": 261
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 11.8,
+        "length": 18.7,
+        "type": "bedroom",
+        "area": 220
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.0,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.6,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 62
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 63.6135532201988,
+      "efficiency_score": 6.024138286179037
+    }
+  },
+  {
+    "plot_length": 32.6,
+    "plot_width": 53.8,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Mediterranean",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.2,
+        "length": 19.3,
+        "type": "bedroom",
+        "area": 274
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.9,
+        "length": 17.2,
+        "type": "bedroom",
+        "area": 223
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.0,
+        "length": 16.7,
+        "type": "bedroom",
+        "area": 283
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.0,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.3,
+        "length": 9.2,
+        "type": "bathroom",
+        "area": 76
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 87.15609827791468,
+      "efficiency_score": 64.26049173478576
+    }
+  },
+  {
+    "plot_length": 99.4,
+    "plot_width": 64.5,
+    "facing": "South",
+    "budget_tier": "Premium",
+    "style": "Contemporary",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 18.0,
+        "length": 16.7,
+        "type": "bedroom",
+        "area": 300
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.6,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 201
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.5,
+        "length": 15.9,
+        "type": "bedroom",
+        "area": 215
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 16.8,
+        "length": 16.4,
+        "type": "bedroom",
+        "area": 276
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.0,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.5,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 35
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.7,
+        "length": 9.0,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 49.138531542957374,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 72.80472204802737,
+      "efficiency_score": 98.36830131331871
+    }
+  },
+  {
+    "plot_length": 30.3,
+    "plot_width": 70.3,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.8,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 270
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.8,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 189
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.1,
+        "length": 15.8,
+        "type": "bedroom",
+        "area": 190
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.8,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 222
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.9,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.0,
+        "length": 6.4,
+        "type": "bathroom",
+        "area": 39
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.7,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 57
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 88.40156747034622,
+      "efficiency_score": 57.22673399547558
+    }
+  },
+  {
+    "plot_length": 85.7,
+    "plot_width": 33.5,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.4,
+        "length": 16.1,
+        "type": "bedroom",
+        "area": 199
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.6,
+        "length": 15.1,
+        "type": "bedroom",
+        "area": 190
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.0,
+        "length": 14.2,
+        "type": "bedroom",
+        "area": 240
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 16.5,
+        "length": 14.0,
+        "type": "bedroom",
+        "area": 231
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.1,
+        "length": 9.1,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.3,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 95.41910717257711,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 64.65595732110533,
+      "efficiency_score": 57.768125593602605
+    }
+  },
+  {
+    "plot_length": 55.4,
+    "plot_width": 60.1,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.6,
+        "length": 15.3,
+        "type": "bedroom",
+        "area": 192
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.3,
+        "length": 19.9,
+        "type": "bedroom",
+        "area": 285
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.2,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.6,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.2,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 32
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 61.65763977814683,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 85.76341080584932,
+      "efficiency_score": 76.8638555236612
+    }
+  },
+  {
+    "plot_length": 41.7,
+    "plot_width": 20.2,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.7,
+        "length": 16.5,
+        "type": "bedroom",
+        "area": 259
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.5,
+        "length": 12.9,
+        "type": "bedroom",
+        "area": 226
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 89.05417750743817,
+      "efficiency_score": 77.58495202853737
+    }
+  },
+  {
+    "plot_length": 50.3,
+    "plot_width": 38.9,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Contemporary",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.5,
+        "length": 16.8,
+        "type": "bedroom",
+        "area": 261
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.7,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 234
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.2,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.8,
+        "length": 7.3,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.6,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 60,
+      "cost_score": 75.06388758306379,
+      "efficiency_score": 91.68780369247631
+    }
+  },
+  {
+    "plot_length": 99.9,
+    "plot_width": 77.8,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.2,
+        "length": 15.4,
+        "type": "bedroom",
+        "area": 203
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 12.7,
+        "length": 16.4,
+        "type": "bedroom",
+        "area": 207
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.8,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 10.1,
+        "length": 19.9,
+        "type": "bedroom",
+        "area": 202
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.1,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 57
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.5,
+        "length": 7.7,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.6,
+        "length": 6.8,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 7.3,
+        "length": 9.2,
+        "type": "bathroom",
+        "area": 67
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 37.687139869424755,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 87.1160110041221,
+      "efficiency_score": 91.34873737574564
+    }
+  },
+  {
+    "plot_length": 49.8,
+    "plot_width": 41.9,
+    "facing": "South",
+    "budget_tier": "Premium",
+    "style": "Scandinavian",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.8,
+        "length": 19.4,
+        "type": "bedroom",
+        "area": 287
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.3,
+        "length": 13.3,
+        "type": "bedroom",
+        "area": 203
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.9,
+        "length": 14.6,
+        "type": "bedroom",
+        "area": 188
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 15.7,
+        "length": 14.2,
+        "type": "bedroom",
+        "area": 222
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 14.3,
+        "length": 12.9,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.0,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 58
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.4,
+        "length": 9.1,
+        "type": "bathroom",
+        "area": 58
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 63.20005225310006,
+      "efficiency_score": 87.53164399742708
+    }
+  },
+  {
+    "plot_length": 48.1,
+    "plot_width": 73.7,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Modern",
+    "bedrooms": 2,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.9,
+        "length": 19.4,
+        "type": "bedroom",
+        "area": 231
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.0,
+        "length": 14.6,
+        "type": "bedroom",
+        "area": 248
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.0,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 78
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.4,
+        "length": 9.9,
+        "type": "bathroom",
+        "area": 83
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.0,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.2,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 38
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 65.22613374157693,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 61.067580204414334,
+      "efficiency_score": 66.09642899278687
+    }
+  },
+  {
+    "plot_length": 82.4,
+    "plot_width": 47.5,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Scandinavian",
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.9,
+        "length": 15.1,
+        "type": "bedroom",
+        "area": 194
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.9,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 225
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.7,
+        "length": 13.5,
+        "type": "bedroom",
+        "area": 144
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.4,
+        "length": 18.9,
+        "type": "bedroom",
+        "area": 331
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.0,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 33
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 68.74121226211781,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 75.93892025028455,
+      "efficiency_score": 90.6732586649394
+    }
+  },
+  {
+    "plot_length": 33.5,
+    "plot_width": 66.4,
+    "facing": "South",
+    "budget_tier": "Ultra Luxury",
+    "style": "Contemporary",
+    "bedrooms": 1,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.9,
+        "length": 18.3,
+        "type": "bedroom",
+        "area": 253
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.9,
+        "length": 8.3,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.5,
+        "length": 10.0,
+        "type": "bathroom",
+        "area": 74
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.2,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 38
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 8.6,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 79.88372515464145,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 88.39479520752516,
+      "efficiency_score": 60.176940045453264
+    }
+  },
+  {
+    "plot_length": 70.7,
+    "plot_width": 43.8,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.1,
+        "length": 15.9,
+        "type": "bedroom",
+        "area": 176
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.7,
+        "length": 12.3,
+        "type": "bedroom",
+        "area": 181
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.8,
+        "length": 14.0,
+        "type": "bedroom",
+        "area": 152
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.3,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.2,
+        "length": 7.9,
+        "type": "bathroom",
+        "area": 41
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 65.71685583154655,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 76.83836369163403,
+      "efficiency_score": 95.37985657263857
+    }
+  },
+  {
+    "plot_length": 41.5,
+    "plot_width": 68.4,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.4,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 246
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.0,
+        "length": 16.3,
+        "type": "bedroom",
+        "area": 260
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.6,
+        "length": 15.2,
+        "type": "bedroom",
+        "area": 222
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.1,
+        "length": 19.6,
+        "type": "bedroom",
+        "area": 217
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.4,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 66
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.6,
+        "length": 6.9,
+        "type": "bathroom",
+        "area": 38
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.6,
+        "length": 7.0,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 93.54489261086508,
+      "efficiency_score": 64.26154069545113
+    }
+  },
+  {
+    "plot_length": 84.5,
+    "plot_width": 37.4,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.6,
+        "length": 14.2,
+        "type": "bedroom",
+        "area": 165
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.7,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.2,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 42.72020237647294,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 65.35051984430214,
+      "efficiency_score": 69.64394280850428
+    }
+  },
+  {
+    "plot_length": 57.1,
+    "plot_width": 54.9,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.0,
+        "length": 13.9,
+        "type": "bedroom",
+        "area": 195
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.0,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 42.439617719971245,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 81.17508022729945,
+      "efficiency_score": 81.65263654823214
+    }
+  },
+  {
+    "plot_length": 69.1,
+    "plot_width": 38.2,
+    "facing": "North",
+    "budget_tier": "Ultra Luxury",
+    "style": "Mediterranean",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.2,
+        "length": 12.8,
+        "type": "bedroom",
+        "area": 169
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.0,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 36
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.4,
+        "length": 9.2,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 51.16814777744939,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 92.4480140061928,
+      "efficiency_score": 87.69872672400166
+    }
+  },
+  {
+    "plot_length": 88.6,
+    "plot_width": 50.1,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.9,
+        "length": 16.4,
+        "type": "bedroom",
+        "area": 244
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.9,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 224
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.3,
+        "length": 17.9,
+        "type": "bedroom",
+        "area": 256
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.0,
+        "length": 15.2,
+        "type": "bedroom",
+        "area": 167
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.7,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 43
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.4,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 38
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.5,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 8.0,
+        "length": 6.4,
+        "type": "bathroom",
+        "area": 51
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 67.95952221664149,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 61.064560066141226,
+      "efficiency_score": 89.32081580682431
+    }
+  },
+  {
+    "plot_length": 62.3,
+    "plot_width": 27.8,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.7,
+        "length": 18.8,
+        "type": "bedroom",
+        "area": 277
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.2,
+        "length": 18.2,
+        "type": "bedroom",
+        "area": 258
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.0,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 52
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.7,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 68
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 83.3196948888154,
+      "efficiency_score": 70.39193647255884
+    }
+  },
+  {
+    "plot_length": 58.0,
+    "plot_width": 31.0,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.7,
+        "length": 17.9,
+        "type": "bedroom",
+        "area": 316
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.5,
+        "length": 19.1,
+        "type": "bedroom",
+        "area": 334
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.6,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 301
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.4,
+        "length": 9.5,
+        "type": "bathroom",
+        "area": 80
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.9,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 48
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 70.10304223080644,
+      "efficiency_score": 85.25124907418424
+    }
+  },
+  {
+    "plot_length": 64.6,
+    "plot_width": 75.8,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Scandinavian",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.0,
+        "length": 13.6,
+        "type": "bedroom",
+        "area": 191
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 14.4,
+        "length": 19.5,
+        "type": "bedroom",
+        "area": 280
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.8,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 82
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.6,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 41.98879226179773,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 93.13605803637182,
+      "efficiency_score": 74.08369031765704
+    }
+  },
+  {
+    "plot_length": 93.0,
+    "plot_width": 25.7,
+    "facing": "North",
+    "budget_tier": "Ultra Luxury",
+    "style": "Contemporary",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.2,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 220
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.2,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 45
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 57.240253392181565,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 66.50865408003045,
+      "efficiency_score": 15.510009137879132
+    }
+  },
+  {
+    "plot_length": 58.5,
+    "plot_width": 69.3,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Contemporary",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.6,
+        "length": 15.8,
+        "type": "bedroom",
+        "area": 167
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.2,
+        "length": 6.4,
+        "type": "bathroom",
+        "area": 39
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 30.877583600723423,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 73.14297717278895,
+      "efficiency_score": 73.76809189440746
+    }
+  },
+  {
+    "plot_length": 96.8,
+    "plot_width": 27.9,
+    "facing": "East",
+    "budget_tier": "Ultra Luxury",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.9,
+        "length": 13.9,
+        "type": "bedroom",
+        "area": 193
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.0,
+        "length": 13.0,
+        "type": "bedroom",
+        "area": 169
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.5,
+        "length": 13.3,
+        "type": "bedroom",
+        "area": 153
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 14.3,
+        "length": 14.3,
+        "type": "bedroom",
+        "area": 205
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 13.3,
+        "length": 18.8,
+        "type": "bedroom",
+        "area": 251
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.7,
+        "length": 9.6,
+        "type": "bathroom",
+        "area": 74
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.4,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 43
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.7,
+        "length": 8.1,
+        "type": "bathroom",
+        "area": 71
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 72.45561098924642,
+      "efficiency_score": 21.093063372361943
+    }
+  },
+  {
+    "plot_length": 86.5,
+    "plot_width": 25.8,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Modern",
+    "bedrooms": 5,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.4,
+        "length": 19.3,
+        "type": "bedroom",
+        "area": 277
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.1,
+        "length": 12.3,
+        "type": "bedroom",
+        "area": 185
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.9,
+        "length": 14.3,
+        "type": "bedroom",
+        "area": 213
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 16.1,
+        "length": 14.2,
+        "type": "bedroom",
+        "area": 229
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 10.2,
+        "length": 18.7,
+        "type": "bedroom",
+        "area": 191
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.5,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 73
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 86.84390864297006,
+      "efficiency_score": 25.89761220069009
+    }
+  },
+  {
+    "plot_length": 44.3,
+    "plot_width": 79.8,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Contemporary",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.1,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 240
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.6,
+        "length": 17.5,
+        "type": "bedroom",
+        "area": 186
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 15.6,
+        "length": 19.8,
+        "type": "bedroom",
+        "area": 308
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 12.3,
+        "length": 15.6,
+        "type": "bedroom",
+        "area": 192
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 17.7,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 221
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.5,
+        "length": 9.6,
+        "type": "bathroom",
+        "area": 82
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.6,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 96.581893456674,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 91.43059022680148,
+      "efficiency_score": 62.20327393878043
+    }
+  },
+  {
+    "plot_length": 68.3,
+    "plot_width": 24.3,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Scandinavian",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.0,
+        "length": 13.2,
+        "type": "bedroom",
+        "area": 225
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.5,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 279
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.9,
+        "length": 14.8,
+        "type": "bedroom",
+        "area": 175
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.5,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 63
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.6,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 81
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 9.0,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 76
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 62.73684319859954,
+      "efficiency_score": 47.83718202893539
+    }
+  },
+  {
+    "plot_length": 51.5,
+    "plot_width": 80.0,
+    "facing": "West",
+    "budget_tier": "Premium",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.3,
+        "length": 16.4,
+        "type": "bedroom",
+        "area": 267
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.7,
+        "length": 15.3,
+        "type": "bedroom",
+        "area": 271
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.4,
+        "length": 17.3,
+        "type": "bedroom",
+        "area": 231
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 15.2,
+        "length": 19.6,
+        "type": "bedroom",
+        "area": 299
+      },
+      {
+        "name": "Bedroom 5",
+        "width": 11.4,
+        "length": 14.7,
+        "type": "bedroom",
+        "area": 169
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.2,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.0,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 42
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 84.77757651732915,
+      "ventilation_score": 95,
+      "vastu_score": 60,
+      "cost_score": 72.14630815273908,
+      "efficiency_score": 65.78056909147115
+    }
+  },
+  {
+    "plot_length": 89.8,
+    "plot_width": 29.0,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 16.5,
+        "length": 14.5,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.6,
+        "length": 12.3,
+        "type": "bedroom",
+        "area": 204
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.1,
+        "length": 9.2,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.5,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 79
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 75.78522466706416,
+      "ventilation_score": 50,
+      "vastu_score": 85,
+      "cost_score": 88.81150164559892,
+      "efficiency_score": 36.21268037664691
+    }
+  },
+  {
+    "plot_length": 42.6,
+    "plot_width": 78.4,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.8,
+        "length": 14.1,
+        "type": "bedroom",
+        "area": 181
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 11.7,
+        "length": 17.5,
+        "type": "bedroom",
+        "area": 205
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 14.4,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 246
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 11.6,
+        "length": 15.3,
+        "type": "bedroom",
+        "area": 177
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 9.1,
+        "type": "bathroom",
+        "area": 81
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.6,
+        "length": 9.9,
+        "type": "bathroom",
+        "area": 76
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.0,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 8.5,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 75
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 90.37120967702586,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 84.94604665850025,
+      "efficiency_score": 61.75263908809699
+    }
+  },
+  {
+    "plot_length": 44.7,
+    "plot_width": 51.9,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.7,
+        "length": 12.1,
+        "type": "bedroom",
+        "area": 165
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 16.9,
+        "length": 19.8,
+        "type": "bedroom",
+        "area": 334
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 13.9,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 239
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.0,
+        "length": 8.4,
+        "type": "bathroom",
+        "area": 51
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.4,
+        "length": 8.2,
+        "type": "bathroom",
+        "area": 53
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 79.21560798571738,
+      "efficiency_score": 74.48397520327292
+    }
+  },
+  {
+    "plot_length": 50.9,
+    "plot_width": 53.2,
+    "facing": "South",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.4,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 274
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.5,
+        "length": 6.7,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 7.5,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 47
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 7.7,
+        "length": 6.5,
+        "type": "bathroom",
+        "area": 50
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 62.12427037505211,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 90.70554612278436,
+      "efficiency_score": 78.21676514131052
+    }
+  },
+  {
+    "plot_length": 98.4,
+    "plot_width": 26.4,
+    "facing": "East",
+    "budget_tier": "Premium",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.2,
+        "length": 12.7,
+        "type": "bedroom",
+        "area": 193
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.3,
+        "length": 15.9,
+        "type": "bedroom",
+        "area": 275
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.8,
+        "length": 12.2,
+        "type": "bedroom",
+        "area": 131
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.5,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 82
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 84.92138461512708,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 90.67323802475347,
+      "efficiency_score": 10.696081437659743
+    }
+  },
+  {
+    "plot_length": 33.1,
+    "plot_width": 55.1,
+    "facing": "West",
+    "budget_tier": "Ultra Luxury",
+    "style": "Scandinavian",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.6,
+        "length": 13.2,
+        "type": "bedroom",
+        "area": 233
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 6.0,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 77.5005616033933,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 66.90210964189788,
+      "efficiency_score": 64.03953310208523
+    }
+  },
+  {
+    "plot_length": 64.6,
+    "plot_width": 23.8,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 5,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 15.6,
+        "length": 15.1,
+        "type": "bedroom",
+        "area": 237
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.3,
+        "length": 19.3,
+        "type": "bedroom",
+        "area": 295
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.6,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 240
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.7,
+        "length": 7.4,
+        "type": "bathroom",
+        "area": 57
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 95,
+      "vastu_score": 85,
+      "cost_score": 92.76113133631857,
+      "efficiency_score": 51.409146399056446
+    }
+  },
+  {
+    "plot_length": 89.4,
+    "plot_width": 42.6,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.6,
+        "length": 12.5,
+        "type": "bedroom",
+        "area": 146
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.7,
+        "length": 16.7,
+        "type": "bedroom",
+        "area": 229
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 11.8,
+        "length": 14.4,
+        "type": "bedroom",
+        "area": 170
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.4,
+        "length": 8.5,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 53.56332693287571,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 65.80972829098873,
+      "efficiency_score": 76.02301763162717
+    }
+  },
+  {
+    "plot_length": 39.9,
+    "plot_width": 23.7,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 1,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.4,
+        "length": 18.5,
+        "type": "bedroom",
+        "area": 229
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 10.2,
+        "length": 17.3,
+        "type": "bedroom",
+        "area": 177
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 9.0,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 85
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 68.97684124156486,
+      "efficiency_score": 92.83617108993688
+    }
+  },
+  {
+    "plot_length": 42.3,
+    "plot_width": 25.7,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Contemporary",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.0,
+        "length": 19.3,
+        "type": "bedroom",
+        "area": 211
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.8,
+        "length": 14.5,
+        "type": "bedroom",
+        "area": 258
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.6,
+        "length": 9.6,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.6,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 57
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.7,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 49
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 89.20905498217122,
+      "efficiency_score": 94.18004198302998
+    }
+  },
+  {
+    "plot_length": 36.5,
+    "plot_width": 62.8,
+    "facing": "South",
+    "budget_tier": "Economy",
+    "style": "Modern",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 17.2,
+        "length": 13.8,
+        "type": "bedroom",
+        "area": 237
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.9,
+        "length": 16.6,
+        "type": "bedroom",
+        "area": 299
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.9,
+        "length": 15.8,
+        "type": "bedroom",
+        "area": 283
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.6,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.8,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 77
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.8,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 69
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 5.9,
+        "length": 6.3,
+        "type": "bathroom",
+        "area": 37
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 65,
+      "vastu_score": 85,
+      "cost_score": 86.42075020396942,
+      "efficiency_score": 63.228499796016365
+    }
+  },
+  {
+    "plot_length": 76.3,
+    "plot_width": 36.4,
+    "facing": "North",
+    "budget_tier": "Economy",
+    "style": "Mediterranean",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.6,
+        "length": 12.2,
+        "type": "bedroom",
+        "area": 154
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.8,
+        "length": 13.1,
+        "type": "bedroom",
+        "area": 207
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 10.3,
+        "length": 14.5,
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.6,
+        "length": 8.6,
+        "type": "bathroom",
+        "area": 74
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.7,
+        "length": 9.9,
+        "type": "bathroom",
+        "area": 66
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.0,
+        "length": 8.0,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 80.4849016823019,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 88.61635642394407,
+      "efficiency_score": 76.26556899482297
+    }
+  },
+  {
+    "plot_length": 64.6,
+    "plot_width": 55.8,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 1,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.2,
+        "length": 14.4,
+        "type": "bedroom",
+        "area": 176
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.3,
+        "length": 7.8,
+        "type": "bathroom",
+        "area": 65
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.5,
+        "length": 6.2,
+        "type": "bathroom",
+        "area": 34
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.4,
+        "length": 8.7,
+        "type": "bathroom",
+        "area": 56
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.9,
+        "length": 7.1,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 44.37553296778212,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 64.60331309633895,
+      "efficiency_score": 86.32123284891617
+    }
+  },
+  {
+    "plot_length": 49.1,
+    "plot_width": 78.2,
+    "facing": "West",
+    "budget_tier": "Standard",
+    "style": "Scandinavian",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 10.9,
+        "length": 14.7,
+        "type": "bedroom",
+        "area": 160
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 13.5,
+        "length": 17.8,
+        "type": "bedroom",
+        "area": 241
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 15.2,
+        "length": 13.5,
+        "type": "bedroom",
+        "area": 205
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 6.8,
+        "length": 9.3,
+        "type": "bathroom",
+        "area": 63
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.4,
+        "length": 8.9,
+        "type": "bathroom",
+        "area": 48
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.5,
+        "length": 7.7,
+        "type": "bathroom",
+        "area": 66
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 6.0,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 59
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 65.8296549859949,
+      "ventilation_score": 65,
+      "vastu_score": 60,
+      "cost_score": 61.77547881605654,
+      "efficiency_score": 65.08180044652222
+    }
+  },
+  {
+    "plot_length": 57.3,
+    "plot_width": 77.8,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 13.2,
+        "length": 18.0,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 15.8,
+        "length": 14.0,
+        "type": "bedroom",
+        "area": 220
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 16.0,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 304
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.7,
+        "length": 13.8,
+        "type": "bedroom",
+        "area": 245
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.6,
+        "length": 6.1,
+        "type": "bathroom",
+        "area": 46
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.0,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 78
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 69.61722246145342,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 71.78000690380603,
+      "efficiency_score": 69.45324797720627
+    }
+  },
+  {
+    "plot_length": 69.8,
+    "plot_width": 29.5,
+    "facing": "West",
+    "budget_tier": "Economy",
+    "style": "Contemporary",
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 1,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 12.5,
+        "length": 19.0,
+        "type": "bedroom",
+        "area": 238
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.7,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 55
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 8.5,
+        "length": 7.2,
+        "type": "bathroom",
+        "area": 61
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 6.0,
+        "length": 6.0,
+        "type": "bathroom",
+        "area": 36
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 78.80186468319339,
+      "ventilation_score": 35,
+      "vastu_score": 60,
+      "cost_score": 93.32661511788984,
+      "efficiency_score": 65.39799534412359
+    }
+  },
+  {
+    "plot_length": 63.2,
+    "plot_width": 73.4,
+    "facing": "North",
+    "budget_tier": "Standard",
+    "style": "Mediterranean",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": false,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.0,
+        "length": 17.2,
+        "type": "bedroom",
+        "area": 241
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 17.7,
+        "length": 13.8,
+        "type": "bedroom",
+        "area": 243
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 17.6,
+        "length": 17.0,
+        "type": "bedroom",
+        "area": 299
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 17.9,
+        "length": 19.1,
+        "type": "bedroom",
+        "area": 341
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 7.3,
+        "length": 7.3,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 5.8,
+        "length": 8.8,
+        "type": "bathroom",
+        "area": 51
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 8.4,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 81
+      },
+      {
+        "name": "Bathroom 4",
+        "width": 7.0,
+        "length": 7.7,
+        "type": "bathroom",
+        "area": 54
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 77.01140856211153,
+      "ventilation_score": 80,
+      "vastu_score": 60,
+      "cost_score": 91.10467850263302,
+      "efficiency_score": 74.46165593392371
+    }
+  },
+  {
+    "plot_length": 52.1,
+    "plot_width": 36.8,
+    "facing": "South",
+    "budget_tier": "Standard",
+    "style": "Farmhouse",
+    "bedrooms": 1,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 2,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 11.8,
+        "length": 14.0,
+        "type": "bedroom",
+        "area": 165
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 5.0,
+        "length": 9.7,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Bathroom 2",
+        "width": 6.1,
+        "length": 6.8,
+        "type": "bathroom",
+        "area": 42
+      },
+      {
+        "name": "Bathroom 3",
+        "width": 5.2,
+        "length": 9.4,
+        "type": "bathroom",
+        "area": 49
+      },
+      {
+        "name": "Living Room",
+        "width": 15,
+        "length": 20,
+        "type": "living",
+        "area": 300
+      },
+      {
+        "name": "Kitchen",
+        "width": 10,
+        "length": 12,
+        "type": "kitchen",
+        "area": 120
+      }
+    ],
+    "scores": {
+      "space_score": 75.53451385195866,
+      "ventilation_score": 35,
+      "vastu_score": 85,
+      "cost_score": 64.24809946863928,
+      "efficiency_score": 96.6902583704244
+    }
+  },
+  {
+    "plot_length": 32.7,
+    "plot_width": 43.5,
+    "facing": "North",
+    "budget_tier": "Ultra Luxury",
+    "style": "Farmhouse",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "kitchens": 1,
+    "floors": 3,
+    "vastu": true,
+    "rooms": [
+      {
+        "name": "Bedroom 1",
+        "width": 14.2,
+        "length": 13.2,
+        "type": "bedroom",
+        "area": 187
+      },
+      {
+        "name": "Bedroom 2",
+        "width": 11.2,
+        "length": 17.1,
+        "type": "bedroom",
+        "area": 191
+      },
+      {
+        "name": "Bedroom 3",
+        "width": 12.4,
+        "length": 16.9,
+        "type": "bedroom",
+        "area": 210
+      },
+      {
+        "name": "Bedroom 4",
+        "width": 10.0,
+        "length": 14.9,
+        "type": "bedroom",
+        "area": 150
+      },
+      {
+        "name": "Bathroom 1",
+        "width": 8.9,
+        "length": 9.8,
+        "type": "bathroom",
+        "area": 88
+      }
+    ],
+    "scores": {
+      "space_score": 100,
+      "ventilation_score": 80,
+      "vastu_score": 85,
+      "cost_score": 90.69890059399754,
+      "efficiency_score": 70.11689236796484
+    }
+  }
+]

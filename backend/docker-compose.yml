@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: plancraft
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://postgres:password@db:5432/plancraft"
+      DATABASE_URL_SYNC: "postgresql+psycopg2://postgres:password@db:5432/plancraft"
+      REDIS_URL: "redis://redis:6379/0"
+      CELERY_BROKER_URL: "redis://redis:6379/1"
+      CELERY_RESULT_BACKEND: "redis://redis:6379/2"
+      JWT_SECRET: "${JWT_SECRET:-plancraft-ai-jwt-secret-dev-2025}"
+      PAYTM_MERCHANT_KEY: "${PAYTM_MERCHANT_KEY:-SampleMerchantKey12345}"
+      CORS_ORIGINS: '["http://localhost:3000","https://plancraftai.vercel.app"]'
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - uploads_data:/app/uploads
+    restart: unless-stopped
+
+  celery_worker:
+    build: .
+    command: celery -A celery_worker.celery_app worker --loglevel=info --concurrency=4
+    environment:
+      DATABASE_URL: "postgresql+asyncpg://postgres:password@db:5432/plancraft"
+      DATABASE_URL_SYNC: "postgresql+psycopg2://postgres:password@db:5432/plancraft"
+      REDIS_URL: "redis://redis:6379/0"
+      CELERY_BROKER_URL: "redis://redis:6379/1"
+      CELERY_RESULT_BACKEND: "redis://redis:6379/2"
+      JWT_SECRET: "${JWT_SECRET:-plancraft-ai-jwt-secret-dev-2025}"
+      PAYTM_MERCHANT_KEY: "${PAYTM_MERCHANT_KEY:-SampleMerchantKey12345}"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - uploads_data:/app/uploads
+    restart: unless-stopped
+
+  celery_beat:
+    build: .
+    command: celery -A celery_worker.celery_app beat --loglevel=info
+    environment:
+      REDIS_URL: "redis://redis:6379/0"
+      CELERY_BROKER_URL: "redis://redis:6379/1"
+      CELERY_RESULT_BACKEND: "redis://redis:6379/2"
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  uploads_data:
