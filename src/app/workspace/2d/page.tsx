@@ -3,8 +3,10 @@
 import * as React from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import PlanCanvas2D from "@/components/workspace/PlanCanvas2D";
-import PlanCanvas3D from "@/components/workspace/PlanCanvas3D";
+import dynamic from "next/dynamic";
+
+const PlanCanvas2D = dynamic(() => import("@/components/workspace/PlanCanvas2D"), { ssr: false });
+const PlanCanvas3D = dynamic(() => import("@/components/workspace/PlanCanvas3D"), { ssr: false });
 import {
   MousePointer2, Move, Square, Expand, DoorOpen, Focus,
   Undo, Redo, ZoomIn, ZoomOut, Save, Download, FileText, Edit3, Eye,
@@ -61,7 +63,13 @@ function Workspace2DContent() {
 
   const [activeTool, setActiveTool] = React.useState("select");
   const [viewMode, setViewMode] = React.useState<"2D" | "3D">("2D");
-  const [rightPanel, setRightPanel] = React.useState<"properties" | "generate" | "ai">("properties");
+  const [rightPanel, setRightPanel] = React.useState<"properties" | "generate" | "ai" | "none">("none");
+  
+  React.useEffect(() => {
+    if (typeof window !== "undefined" && window.innerWidth >= 768) {
+      setRightPanel("properties");
+    }
+  }, []);
   const [genPlotWidth, setGenPlotWidth] = React.useState(40);
   const [genPlotLength, setGenPlotLength] = React.useState(60);
   const [genBedrooms, setGenBedrooms] = React.useState(3);
@@ -539,7 +547,12 @@ function Workspace2DContent() {
           )}
 
           <div className="h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-1" />
-          <button onClick={handleSave} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
+          <button onClick={() => setRightPanel(rightPanel === "none" ? "properties" : "none")} className={`md:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
+            nightMode ? 'hover:bg-zinc-800 text-zinc-300' : 'hover:bg-slate-100 text-slate-600'
+          }`}>
+             Menu
+          </button>
+          <button onClick={handleSave} className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
             nightMode ? 'hover:bg-zinc-800 text-zinc-300' : 'hover:bg-slate-100 text-slate-600'
           }`}>
             <Save className="w-3.5 h-3.5" /> Save
@@ -694,11 +707,11 @@ function Workspace2DContent() {
         </main>
 
         {/* Right Sidebar */}
-        <aside className={`w-80 flex flex-col z-20 shrink-0 border-l transition-colors duration-500 ${
-          nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
-        }`}>
+        <aside className={`absolute md:relative right-0 h-full md:h-auto w-80 max-w-[85vw] flex flex-col z-40 shrink-0 border-l transition-transform duration-500 ${
+          rightPanel === "none" ? "translate-x-full md:translate-x-0" : "translate-x-0 shadow-2xl md:shadow-none"
+        } ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}`}>
           {/* Panel Tabs */}
-          <div className={`flex border-b p-2 gap-2 shrink-0 ${
+          <div className={`flex items-center border-b p-2 gap-2 shrink-0 ${
             nightMode ? 'border-zinc-800' : 'border-slate-200'
           }`}>
             <button
@@ -730,6 +743,9 @@ function Workspace2DContent() {
               }`}
             >
               <Sparkles className="w-3 h-3" /> Copilot
+            </button>
+            <button onClick={() => setRightPanel("none")} className="md:hidden p-1.5 ml-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300">
+              <X className="w-4 h-4" />
             </button>
           </div>
 

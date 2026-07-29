@@ -106,8 +106,8 @@ export default function LoginPage() {
       <div className="login-container">
         <div className="login-card">
           <div className="login-header">
-            <div className="brand">PlanCraftAI</div>
-            <h2>Welcome Back</h2>
+            <div className="brand">SDB BUILDER</div>
+            <h2>Welcome to SDB BUILDER</h2>
             <p>Please sign in to your account</p>
           </div>
 
