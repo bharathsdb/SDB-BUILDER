@@ -94,7 +94,7 @@ function Workspace2DContent() {
 
   // Auto-open panel on mobile when element selected
   React.useEffect(() => {
-    if (selectedElement && typeof window !== 'undefined' && window.innerWidth < 768) {
+    if (selectedElement && typeof window !== 'undefined' && window.innerWidth < 1024) {
       setMobilePanelOpen(true);
     }
   }, [selectedElement]);
@@ -587,7 +587,7 @@ function Workspace2DContent() {
           {/* Mobile Right Panel Toggle Button */}
           <button
             onClick={() => setMobilePanelOpen(!mobilePanelOpen)}
-            className={`md:hidden p-1.5 rounded-lg border transition-colors ${
+            className={`lg:hidden p-1.5 rounded-lg border transition-colors ${
               mobilePanelOpen ? 'bg-primary text-white border-primary' : nightMode ? 'bg-zinc-800 border-zinc-700 text-zinc-300' : 'bg-slate-100 border-slate-200 text-slate-700'
             }`}
             title="Toggle Panel"
@@ -599,7 +599,7 @@ function Workspace2DContent() {
 
       <div className="flex-1 flex overflow-hidden relative">
         {/* Left Toolbar - Desktop Sidebar & Mobile Floating Dock */}
-        <aside className={`hidden md:flex w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
+        <aside className={`hidden lg:flex w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
           nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
         }`}>
           {tools.map((tool, i) => {
@@ -625,7 +625,7 @@ function Workspace2DContent() {
         </aside>
 
         {/* Mobile Floating Horizontal Tool Dock */}
-        <div className="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[95vw] overflow-x-auto no-scrollbar">
+        <div className="lg:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[95vw] overflow-x-auto no-scrollbar">
           {tools.map((tool, i) => {
             if ("divider" in tool) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
             const isActive = activeTool === tool.id;
@@ -746,14 +746,15 @@ function Workspace2DContent() {
 
         {/* Right Sidebar - Desktop Fixed / Mobile Sliding Bottom Sheet */}
         <aside className={`
-          fixed md:relative bottom-0 left-0 right-0 md:left-auto md:right-auto md:bottom-auto
-          w-full md:w-80 max-h-[70vh] md:max-h-none flex flex-col z-40 shrink-0 border-t md:border-t-0 md:border-l 
-          rounded-t-2xl md:rounded-none shadow-2xl md:shadow-none transition-transform duration-300
-          ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full md:translate-y-0'}
+          fixed lg:relative bottom-0 left-0 right-0 lg:left-auto lg:right-auto lg:bottom-auto
+          w-full lg:w-80 max-h-[70vh] lg:max-h-none flex flex-col z-40 shrink-0 border-t lg:border-t-0 lg:border-l 
+          rounded-t-2xl lg:rounded-none shadow-2xl lg:shadow-none transition-transform duration-300
+          ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full lg:translate-y-0'}
+          ${rightPanel === "none" ? 'lg:translate-x-full lg:absolute lg:right-0 lg:h-full' : 'lg:translate-x-0'}
           ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}
         `}>
           {/* Mobile Handle Bar */}
-          <div className="md:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
+          <div className="lg:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
             <div className="w-10 h-1 bg-slate-300 dark:bg-zinc-700 rounded-full mx-auto" />
             <button 
               onClick={() => setMobilePanelOpen(false)}
@@ -797,7 +798,7 @@ function Workspace2DContent() {
             >
               <Sparkles className="w-3 h-3" /> Copilot
             </button>
-            <button onClick={() => setRightPanel("none")} className="md:hidden p-1.5 ml-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300">
+            <button onClick={() => setRightPanel("none")} className="lg:hidden p-1.5 ml-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300">
               <X className="w-4 h-4" />
             </button>
           </div>

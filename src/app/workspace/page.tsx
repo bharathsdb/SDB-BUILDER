@@ -195,6 +195,7 @@ export default function WorkspacePage() {
           flex flex-col z-40 shrink-0 rounded-t-2xl lg:rounded-none shadow-2xl lg:shadow-none
           transition-transform duration-300
           ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full lg:translate-y-0'}
+          ${rightPanel === "none" ? 'lg:translate-x-full lg:absolute lg:right-0 lg:h-full' : 'lg:translate-x-0'}
         `}>
           {/* Mobile Handle Bar */}
           <div className="lg:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
