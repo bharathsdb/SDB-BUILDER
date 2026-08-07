@@ -14,6 +14,14 @@ export default function WorkspacePage() {
   const [rightPanel, setRightPanel] = React.useState("properties");
   const [showQRModal, setShowQRModal] = React.useState(false);
   const [mobilePanelOpen, setMobilePanelOpen] = React.useState(false);
+  // JS-based mobile detection — bypasses CSS breakpoints for 100% reliability
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const tools = [
     { id: "select", icon: MousePointer2, label: "Select (V)" },
@@ -85,10 +93,11 @@ export default function WorkspacePage() {
         </div>
       </header>
 
-      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+      <div className="flex-1 overflow-hidden" style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
         
         {/* Left Toolbar Desktop Sidebar */}
-        <aside className="hidden lg:flex w-14 bg-white dark:bg-zinc-900 border-r border-slate-200 dark:border-slate-800 flex-col items-center py-4 gap-2 z-20 shrink-0">
+        {!isMobile && (
+        <aside className="w-14 bg-white dark:bg-zinc-900 border-r border-slate-200 dark:border-slate-800 flex-col items-center py-4 gap-2 z-20 shrink-0" style={{ display: 'flex' }}>
           {tools.map((tool, i) => {
             if (tool.divider) {
               return <div key={i} className="w-8 h-px bg-slate-200 dark:bg-slate-800 my-2" />;
@@ -110,6 +119,7 @@ export default function WorkspacePage() {
             );
           })}
         </aside>
+        )}
 
         {/* Center Canvas */}
         <main className="flex-1 relative bg-[#e2e8f0] dark:bg-[#09090b] overflow-hidden">
@@ -187,16 +197,18 @@ export default function WorkspacePage() {
 
         </main>
 
-        {/* Right Sidebar — Desktop: fixed beside canvas | Mobile: pushes canvas UP (no overlay) */}
-        <aside className={`
-          w-full lg:w-80 shrink-0 flex flex-col overflow-hidden
-          border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800
-          bg-white dark:bg-zinc-900
-          transition-[height] duration-300 ease-in-out
-          ${mobilePanelOpen ? 'h-[52vh]' : 'h-0'}
-          lg:h-auto
-          ${rightPanel === 'none' ? 'lg:hidden' : ''}
-        `}>
+        {/* Right Sidebar — JS-controlled: pushes canvas up on mobile, beside canvas on desktop */}
+        <aside
+          className="shrink-0 flex flex-col overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-zinc-900 border-slate-200 dark:border-slate-800"
+          style={{
+            width: isMobile ? '100%' : '320px',
+            height: isMobile ? (mobilePanelOpen ? '52vh' : '0px') : 'auto',
+            borderTopWidth: isMobile ? '1px' : '0',
+            borderLeftWidth: isMobile ? '0' : '1px',
+            borderStyle: 'solid',
+            display: (!isMobile && rightPanel === 'none') ? 'none' : 'flex',
+          }}
+        >
           {/* Mobile Handle Bar */}
           <div className="lg:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
             <div className="w-10 h-1 bg-slate-300 dark:bg-zinc-700 rounded-full mx-auto" />

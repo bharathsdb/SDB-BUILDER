@@ -91,6 +91,14 @@ function Workspace2DContent() {
   ]);
   const [showQRModal, setShowQRModal] = React.useState(false);
   const [mobilePanelOpen, setMobilePanelOpen] = React.useState(false);
+  // JS-based mobile detection — bypasses CSS breakpoints for 100% reliability
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Edit Mode & Undo/Redo State
   const [isEditMode, setIsEditMode] = React.useState(false);
@@ -590,11 +598,12 @@ function Workspace2DContent() {
         </div>
       </header>
 
-      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
-        {/* Left Toolbar - Desktop Sidebar only */}
-        <aside className={`hidden lg:flex w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
+      <div className="flex-1 overflow-hidden" style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row' }}>
+        {/* Left Toolbar - Desktop Sidebar only, hidden on mobile via JS */}
+        {!isMobile && (
+        <aside className={`w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
           nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
-        }`}>
+        }`} style={{ display: 'flex' }}>
           {tools.map((tool, i) => {
             if ("divider" in tool) return <div key={i} className={`w-8 h-px my-1 ${nightMode ? 'bg-zinc-800' : 'bg-slate-200'}`} />;
             const isActive = activeTool === tool.id;
@@ -616,6 +625,7 @@ function Workspace2DContent() {
             );
           })}
         </aside>
+        )}
 
         {/* Center Canvas - takes all available height, shrinks when mobile panel opens */}
         <main
@@ -737,16 +747,18 @@ function Workspace2DContent() {
           </div>
         </main>
 
-        {/* Right Sidebar — Desktop: fixed beside canvas | Mobile: pushes canvas UP (no overlay) */}
-        <aside className={`
-          w-full lg:w-80 shrink-0 flex flex-col overflow-hidden
-          border-t lg:border-t-0 lg:border-l
-          transition-[height] duration-300 ease-in-out
-          ${mobilePanelOpen ? 'h-[52vh]' : 'h-0'}
-          lg:h-auto
-          ${rightPanel === 'none' ? 'lg:hidden' : ''}
-          ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}
-        `}>
+        {/* Right Sidebar — JS-controlled: pushes canvas up on mobile, beside canvas on desktop */}
+        <aside
+          className={`shrink-0 flex flex-col overflow-hidden transition-all duration-300 ease-in-out ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}`}
+          style={{
+            width: isMobile ? '100%' : '320px',
+            height: isMobile ? (mobilePanelOpen ? '52vh' : '0px') : 'auto',
+            borderTopWidth: isMobile ? '1px' : '0',
+            borderLeftWidth: isMobile ? '0' : '1px',
+            borderStyle: 'solid',
+            display: (!isMobile && rightPanel === 'none') ? 'none' : 'flex',
+          }}
+        >
           {/* Mobile Floating Tool Dock (inside canvas, above panel) */}
 
           {/* Panel close strip (mobile) + tabs */}
