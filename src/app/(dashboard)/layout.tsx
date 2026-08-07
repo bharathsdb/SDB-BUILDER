@@ -227,10 +227,11 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
 
             <Link
               href="/generate"
-              className="hidden sm:flex items-center gap-2 px-4 py-2 bg-primary text-white text-sm font-semibold rounded-xl shadow-md shadow-primary/20 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all"
+              className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-primary text-white text-xs sm:text-sm font-semibold rounded-xl shadow-md shadow-primary/20 hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/25 transition-all"
+              title="New Project"
             >
               <Wand2 className="w-4 h-4" />
-              New Project
+              <span className="hidden sm:inline">New Project</span>
             </Link>
           </div>
         </header>

@@ -193,11 +193,11 @@ export default function ModelViewer({ url, name }: ModelViewerProps) {
 
       {/* Bottom Floating Control Bar */}
       {!error && (
-        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-2 rounded-2xl backdrop-blur-lg bg-black/40 border border-white/10 shadow-2xl z-20 transition-all duration-300 hover:bg-black/55 hover:border-white/20">
+        <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-2xl backdrop-blur-lg bg-black/40 border border-white/10 shadow-2xl z-20 transition-all duration-300 hover:bg-black/55 hover:border-white/20 max-w-[95vw] overflow-x-auto no-scrollbar">
           <Button
             variant="ghost"
             size="icon"
-            className="h-9 w-9 text-white hover:bg-white/10 rounded-xl"
+            className="h-8 sm:h-9 w-8 sm:w-9 text-white hover:bg-white/10 rounded-xl shrink-0"
             onClick={handleZoomIn}
             title="Zoom In"
           >
@@ -206,7 +206,7 @@ export default function ModelViewer({ url, name }: ModelViewerProps) {
           <Button
             variant="ghost"
             size="icon"
-            className="h-9 w-9 text-white hover:bg-white/10 rounded-xl"
+            className="h-8 sm:h-9 w-8 sm:w-9 text-white hover:bg-white/10 rounded-xl shrink-0"
             onClick={handleZoomOut}
             title="Zoom Out"
           >
@@ -215,7 +215,7 @@ export default function ModelViewer({ url, name }: ModelViewerProps) {
           <Button
             variant="ghost"
             size="icon"
-            className="h-9 w-9 text-white hover:bg-white/10 rounded-xl"
+            className="h-8 sm:h-9 w-8 sm:w-9 text-white hover:bg-white/10 rounded-xl shrink-0"
             onClick={handleResetCamera}
             title="Reset Camera"
           >
@@ -224,19 +224,19 @@ export default function ModelViewer({ url, name }: ModelViewerProps) {
           <Button
             variant="ghost"
             size="icon"
-            className={`h-9 w-9 rounded-xl ${autoRotate ? "text-primary bg-primary/10 hover:bg-primary/20" : "text-white hover:bg-white/10"}`}
+            className={`h-8 sm:h-9 w-8 sm:w-9 rounded-xl shrink-0 ${autoRotate ? "text-primary bg-primary/10 hover:bg-primary/20" : "text-white hover:bg-white/10"}`}
             onClick={() => setAutoRotate(!autoRotate)}
             title={autoRotate ? "Pause Auto Rotation" : "Auto Rotate"}
           >
             {autoRotate ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
           </Button>
 
-          <div className="w-px h-6 bg-white/10 mx-1" />
+          <div className="w-px h-5 sm:h-6 bg-white/10 mx-0.5 shrink-0" />
 
           <Button
             variant="ghost"
             size="icon"
-            className="h-9 w-9 text-white hover:bg-white/10 rounded-xl"
+            className="h-8 sm:h-9 w-8 sm:w-9 text-white hover:bg-white/10 rounded-xl shrink-0"
             onClick={() => setIsBrightLighting(!isBrightLighting)}
             title="Toggle Lighting Style"
           >
@@ -245,7 +245,7 @@ export default function ModelViewer({ url, name }: ModelViewerProps) {
           <Button
             variant="ghost"
             size="icon"
-            className="h-9 w-9 text-white hover:bg-white/10 rounded-xl"
+            className="h-8 sm:h-9 w-8 sm:w-9 text-white hover:bg-white/10 rounded-xl shrink-0"
             onClick={toggleFullscreen}
             title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
           >

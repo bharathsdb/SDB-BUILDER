@@ -594,3 +594,40 @@ input:focus, textarea:focus, select:focus {
   overflow: auto;
 }
 
+/* ========================
+   MOBILE TOUCH & VIEWPORT UTILITIES
+======================== */
+.touch-none {
+  touch-action: none;
+}
+.touch-pan-y {
+  touch-action: pan-y;
+}
+.touch-pan-x {
+  touch-action: pan-x;
+}
+
+/* Mobile full height container ensuring notch/address bar fixes */
+.mobile-screen-h {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.mobile-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.mobile-safe-top {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+/* Custom scrollbars for mobile horizontal sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+

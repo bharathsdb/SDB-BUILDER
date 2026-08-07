@@ -252,7 +252,7 @@ export default function GenerateWizardPage() {
 
 
         <div className="flex-1 flex flex-col bg-slate-50 dark:bg-zinc-950 overflow-y-auto">
-          <div className="flex-1 max-w-3xl w-full mx-auto p-8 lg:p-12 flex flex-col justify-center">
+          <div className="flex-1 max-w-3xl w-full mx-auto p-4 sm:p-8 lg:p-12 flex flex-col justify-center">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={step}
@@ -264,24 +264,24 @@ export default function GenerateWizardPage() {
                 className="w-full"
               >
                 {step === 1 && (
-                  <div className="space-y-8">
+                  <div className="space-y-6 sm:space-y-8">
                     <div>
-                      <h2 className="text-3xl font-bold mb-2">Plot Details</h2>
-                      <p className="text-slate-500">Let&apos;s start with the physical dimensions of your land.</p>
+                      <h2 className="text-2xl sm:text-3xl font-bold mb-2">Plot Details</h2>
+                      <p className="text-sm sm:text-base text-slate-500">Let&apos;s start with the physical dimensions of your land.</p>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                       <div className="space-y-2">
                         <label className="text-sm font-medium">Plot Length (ft)</label>
-                        <input type="number" value={plotLength} onChange={e => setPlotLength(Number(e.target.value))} className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary/50 text-lg" />
+                        <input type="number" value={plotLength} onChange={e => setPlotLength(Number(e.target.value))} className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary/50 text-base sm:text-lg" />
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-medium">Plot Width (ft)</label>
-                        <input type="number" value={plotWidth} onChange={e => setPlotWidth(Number(e.target.value))} className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary/50 text-lg" />
+                        <input type="number" value={plotWidth} onChange={e => setPlotWidth(Number(e.target.value))} className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary/50 text-base sm:text-lg" />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-medium mb-3 block">Facing Direction (Road Side)</label>
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
                         {["North", "East", "South", "West"].map((dir) => (
                           <button key={dir} onClick={() => setFacing(dir)} className={`py-3 rounded-xl border text-sm font-medium transition-colors ${facing === dir ? 'border-primary bg-primary/5 text-primary' : 'border-slate-200 dark:border-slate-800 hover:border-primary/50'}`}>
                             {dir}
@@ -293,19 +293,19 @@ export default function GenerateWizardPage() {
                 )}
 
                 {step === 2 && (
-                  <div className="space-y-8">
+                  <div className="space-y-6 sm:space-y-8">
                     <div>
-                      <h2 className="text-3xl font-bold mb-2">Room Requirements</h2>
-                      <p className="text-slate-500">What spaces do you need in the house?</p>
+                      <h2 className="text-2xl sm:text-3xl font-bold mb-2">Room Requirements</h2>
+                      <p className="text-sm sm:text-base text-slate-500">What spaces do you need in the house?</p>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                       {roomControls.map(([label, val, setVal]) => (
                         <div key={label} className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-zinc-900 flex items-center justify-between">
-                          <span className="font-medium">{label}</span>
+                          <span className="font-medium text-sm sm:text-base">{label}</span>
                           <div className="flex items-center gap-3">
-                            <button onClick={() => setVal(Math.max(0, val - 1))} className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-slate-200">-</button>
-                            <span className="w-4 text-center font-bold">{val}</span>
-                            <button onClick={() => setVal(val + 1)} className="w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-slate-200">+</button>
+                            <button onClick={() => setVal(Math.max(0, val - 1))} className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-bold text-base hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">-</button>
+                            <span className="w-6 text-center font-bold text-base">{val}</span>
+                            <button onClick={() => setVal(val + 1)} className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-bold text-base hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">+</button>
                           </div>
                         </div>
                       ))}
@@ -314,13 +314,13 @@ export default function GenerateWizardPage() {
                 )}
 
                 {step === 3 && (
-                  <div className="space-y-8">
+                  <div className="space-y-6 sm:space-y-8">
                     <div>
-                      <h2 className="text-3xl font-bold mb-2">Preferences & Style</h2>
-                      <p className="text-slate-500">Tell the AI how to prioritize the layout generation.</p>
+                      <h2 className="text-2xl sm:text-3xl font-bold mb-2">Preferences & Style</h2>
+                      <p className="text-sm sm:text-base text-slate-500">Tell the AI how to prioritize the layout generation.</p>
                     </div>
                     <div className="space-y-4">
-                      <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4">
                         {[
                           { title: "Vastu Compliant", desc: "Strict adherence to Vastu Shastra rules", state: vastu, set: setVastu },
                           { title: "Space Optimized", desc: "Maximize usable carpet area", state: spaceOptimized, set: setSpaceOptimized },
@@ -334,15 +334,15 @@ export default function GenerateWizardPage() {
                                 {pref.state && <Check className="w-3 h-3" />}
                               </div>
                             </div>
-                            <p className="text-sm text-slate-500">{pref.desc}</p>
+                            <p className="text-xs sm:text-sm text-slate-500">{pref.desc}</p>
                           </div>
                         ))}
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-medium">Architectural Style</label>
-                        <div className="grid grid-cols-3 gap-2">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
                           {["Modern", "Contemporary", "Scandinavian", "Mediterranean", "Farmhouse", "Minimalist"].map(s => (
-                            <button key={s} onClick={() => setStyle(s)} className={`py-2.5 rounded-xl border text-sm font-medium transition-colors ${style === s ? 'border-primary bg-primary/5 text-primary' : 'border-slate-200 dark:border-slate-800 hover:border-primary/50'}`}>
+                            <button key={s} onClick={() => setStyle(s)} className={`py-2.5 px-2 rounded-xl border text-xs sm:text-sm font-medium transition-colors ${style === s ? 'border-primary bg-primary/5 text-primary' : 'border-slate-200 dark:border-slate-800 hover:border-primary/50'}`}>
                               {s}
                             </button>
                           ))}

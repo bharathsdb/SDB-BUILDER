@@ -90,6 +90,14 @@ function Workspace2DContent() {
     { role: "ai", text: "Hi! I'm your AI Architect Copilot. I can help you modify this layout, optimize the space, or analyze costs. What would you like to do?" }
   ]);
   const [showQRModal, setShowQRModal] = React.useState(false);
+  const [mobilePanelOpen, setMobilePanelOpen] = React.useState(false);
+
+  // Auto-open panel on mobile when element selected
+  React.useEffect(() => {
+    if (selectedElement && typeof window !== 'undefined' && window.innerWidth < 768) {
+      setMobilePanelOpen(true);
+    }
+  }, [selectedElement]);
 
   // Edit Mode & Undo/Redo State
   const [isEditMode, setIsEditMode] = React.useState(false);
@@ -439,23 +447,23 @@ function Workspace2DContent() {
   }
 
   return (
-    <div className={`h-screen w-full flex flex-col overflow-hidden select-none transition-colors duration-500 ${nightMode ? 'bg-zinc-950' : 'bg-slate-100'}`}>
+    <div className={`mobile-screen-h w-full flex flex-col overflow-hidden select-none transition-colors duration-500 ${nightMode ? 'bg-zinc-950' : 'bg-slate-100'}`}>
       {/* Top Toolbar */}
-      <header className={`h-14 border-b flex items-center justify-between px-4 shrink-0 z-30 transition-colors duration-500 ${
+      <header className={`h-14 border-b flex items-center justify-between px-2 sm:px-4 shrink-0 z-30 transition-colors duration-500 ${
         nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
       }`}>
-        <div className="flex items-center gap-3">
-          <Link href="/workspace" className={`p-2 rounded-lg transition-colors ${
+        <div className="flex items-center gap-1.5 sm:gap-3 min-w-0">
+          <Link href="/workspace" className={`p-1.5 sm:p-2 rounded-lg transition-colors shrink-0 ${
             nightMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-slate-100 text-slate-500'
           }`}>
             <ArrowLeft className="w-5 h-5" />
           </Link>
-          <div className="flex items-center gap-2">
-            <Hexagon className="w-5 h-5 text-primary" />
-            <span className="font-semibold text-sm">{currentProject?.name || "Untitled"}</span>
+          <div className="flex items-center gap-1.5 min-w-0">
+            <Hexagon className="w-5 h-5 text-primary shrink-0" />
+            <span className="font-semibold text-xs sm:text-sm truncate max-w-[120px] sm:max-w-[200px]">{currentProject?.name || "Untitled"}</span>
           </div>
-          <div className="h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-2" />
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:block h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-1" />
+          <div className="hidden lg:flex items-center gap-1">
             {menus.map(menu => (
               <div key={menu.id} className="relative">
                 <button
@@ -487,56 +495,48 @@ function Workspace2DContent() {
             ))}
           </div>
         </div>
-        <div className="flex items-center gap-2">
+
+        <div className="flex items-center gap-1 sm:gap-2">
+          {/* Mode Switcher 2D/3D */}
           <div className={`flex items-center rounded-lg p-0.5 border ${
             nightMode ? 'bg-zinc-800 border-zinc-700' : 'bg-slate-100 border-slate-200'
           }`}>
-            <button onClick={() => setViewMode("2D")} className={`px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
+            <button onClick={() => setViewMode("2D")} className={`px-2.5 sm:px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
               viewMode === "2D" ? (nightMode ? 'bg-zinc-700 text-white' : 'bg-white text-slate-800') : (nightMode ? 'text-zinc-400 hover:text-white' : 'text-slate-500 hover:text-slate-800')
             }`}>2D</button>
-            <button onClick={() => setViewMode("3D")} className={`px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
+            <button onClick={() => setViewMode("3D")} className={`px-2.5 sm:px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
               viewMode === "3D" ? (nightMode ? 'bg-zinc-700 text-white' : 'bg-white text-slate-800') : (nightMode ? 'text-zinc-400 hover:text-white' : 'text-slate-500 hover:text-slate-800')
             }`}>3D</button>
           </div>
-          <div className="h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-1" />
-          <button onClick={() => setZoom(z => Math.max(25, z - 10))} className={`p-2 rounded-lg transition-colors ${
-            nightMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-slate-100 text-slate-500'
-          }`} title="Zoom Out"><ZoomOut className="w-4 h-4" /></button>
-          <span className={`text-xs font-bold min-w-[3rem] text-center ${
-            nightMode ? 'text-zinc-400' : 'text-slate-500'
-          }`}>{zoom}%</span>
-          <button onClick={() => setZoom(z => Math.min(400, z + 10))} className={`p-2 rounded-lg transition-colors ${
-            nightMode ? 'hover:bg-zinc-800 text-zinc-400' : 'hover:bg-slate-100 text-slate-500'
-          }`} title="Zoom In"><ZoomIn className="w-4 h-4" /></button>
-          
-          <div className="h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-1" />
 
           {/* Edit Mode Toggle & Undo/Redo */}
           {viewMode === "2D" && (
-            <div className={`flex items-center rounded-lg p-0.5 border mr-2 ${
+            <div className={`flex items-center rounded-lg p-0.5 border ${
               nightMode ? 'bg-zinc-800 border-zinc-700' : 'bg-slate-100 border-slate-200'
             }`}>
               <button 
                 onClick={() => setIsEditMode(false)} 
-                className={`flex items-center gap-1.5 px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
+                className={`flex items-center gap-1 px-2 sm:px-3 py-1 text-xs font-semibold rounded-md transition-colors ${
                   !isEditMode ? (nightMode ? 'bg-zinc-700 text-white' : 'bg-white text-slate-800') : (nightMode ? 'text-zinc-400 hover:text-white' : 'text-slate-500 hover:text-slate-800')
                 }`}
+                title="View Mode"
               >
-                <Eye className="w-3.5 h-3.5" /> View
+                <Eye className="w-3.5 h-3.5" /> <span className="hidden sm:inline">View</span>
               </button>
               <button 
                 onClick={() => setIsEditMode(true)} 
-                className={`flex items-center gap-1.5 px-3 py-1 text-xs font-semibold shadow-sm rounded-md transition-colors ${
+                className={`flex items-center gap-1 px-2 sm:px-3 py-1 text-xs font-semibold rounded-md transition-colors ${
                   isEditMode ? (nightMode ? 'bg-zinc-700 text-white' : 'bg-white text-slate-800') : (nightMode ? 'text-zinc-400 hover:text-white' : 'text-slate-500 hover:text-slate-800')
                 }`}
+                title="Modify Mode"
               >
-                <Edit3 className="w-3.5 h-3.5" /> Modify
+                <Edit3 className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Modify</span>
               </button>
             </div>
           )}
 
           {isEditMode && (
-             <div className="flex items-center mr-2 gap-1">
+             <div className="hidden sm:flex items-center gap-0.5">
                 <button onClick={handleUndo} disabled={history.length === 0} className={`p-1.5 rounded-md transition-colors ${history.length === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:bg-slate-200 dark:hover:bg-zinc-800'}`}>
                   <Undo className="w-4 h-4" />
                 </button>
@@ -546,28 +546,24 @@ function Workspace2DContent() {
              </div>
           )}
 
-          <div className="h-6 w-px bg-slate-200 dark:bg-zinc-800 mx-1" />
-          <button onClick={() => setRightPanel(rightPanel === "none" ? "properties" : "none")} className={`md:hidden flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
+          <button onClick={handleSave} className={`hidden sm:flex items-center gap-1 px-2.5 py-1.5 rounded-lg transition-colors text-xs font-medium ${
             nightMode ? 'hover:bg-zinc-800 text-zinc-300' : 'hover:bg-slate-100 text-slate-600'
-          }`}>
-             Menu
+          }`} title="Save">
+            <Save className="w-3.5 h-3.5" /> <span className="hidden md:inline">Save</span>
           </button>
-          <button onClick={handleSave} className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
+          
+          <button onClick={() => setShowQRModal(true)} className={`p-1.5 sm:px-2.5 sm:py-1.5 rounded-lg transition-colors text-xs font-medium ${
             nightMode ? 'hover:bg-zinc-800 text-zinc-300' : 'hover:bg-slate-100 text-slate-600'
-          }`}>
-            <Save className="w-3.5 h-3.5" /> Save
+          }`} title="Share">
+            <QrCode className="w-4 h-4" />
           </button>
-          <button onClick={() => setShowQRModal(true)} className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-colors text-xs font-medium ${
-            nightMode ? 'hover:bg-zinc-800 text-zinc-300' : 'hover:bg-slate-100 text-slate-600'
-          }`}>
-            <QrCode className="w-3.5 h-3.5" /> Share
-          </button>
+
           <div className="relative">
             <button
               onClick={() => setOpenMenu(openMenu === "export" ? null : "export")}
-              className="flex items-center gap-1.5 px-4 py-1.5 bg-primary text-white hover:bg-primary/90 rounded-lg transition-colors text-xs font-medium shadow-sm"
+              className="flex items-center gap-1 px-2.5 sm:px-3 py-1.5 bg-primary text-white hover:bg-primary/90 rounded-lg transition-colors text-xs font-medium shadow-sm"
             >
-              <Download className="w-3.5 h-3.5" /> Export
+              <Download className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Export</span>
             </button>
             {openMenu === "export" && (
               <div className={`absolute top-full right-0 mt-1 w-36 rounded-xl shadow-2xl border py-1 z-50 ${
@@ -587,12 +583,23 @@ function Workspace2DContent() {
               </div>
             )}
           </div>
+
+          {/* Mobile Right Panel Toggle Button */}
+          <button
+            onClick={() => setMobilePanelOpen(!mobilePanelOpen)}
+            className={`md:hidden p-1.5 rounded-lg border transition-colors ${
+              mobilePanelOpen ? 'bg-primary text-white border-primary' : nightMode ? 'bg-zinc-800 border-zinc-700 text-zinc-300' : 'bg-slate-100 border-slate-200 text-slate-700'
+            }`}
+            title="Toggle Panel"
+          >
+            <Sparkles className="w-4 h-4" />
+          </button>
         </div>
       </header>
 
-      <div className="flex-1 flex overflow-hidden">
-        {/* Left Toolbar */}
-        <aside className={`w-14 flex flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
+      <div className="flex-1 flex overflow-hidden relative">
+        {/* Left Toolbar - Desktop Sidebar & Mobile Floating Dock */}
+        <aside className={`hidden md:flex w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
           nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
         }`}>
           {tools.map((tool, i) => {
@@ -617,6 +624,30 @@ function Workspace2DContent() {
           })}
         </aside>
 
+        {/* Mobile Floating Horizontal Tool Dock */}
+        <div className="md:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[95vw] overflow-x-auto no-scrollbar">
+          {tools.map((tool, i) => {
+            if ("divider" in tool) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
+            const isActive = activeTool === tool.id;
+            return (
+              <button
+                key={tool.id}
+                onClick={() => setActiveTool(tool.id)}
+                title={tool.label}
+                className={`p-2.5 rounded-xl transition-all shrink-0 ${
+                  isActive
+                    ? 'bg-primary text-white shadow-md'
+                    : nightMode
+                      ? 'text-zinc-400 hover:bg-zinc-800'
+                      : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                {React.createElement(tool.icon, { className: "w-4 h-4" })}
+              </button>
+            );
+          })}
+        </div>
+
         {/* Center Canvas */}
         <main
           ref={canvasRef}
@@ -639,7 +670,7 @@ function Workspace2DContent() {
           />
 
           {/* Canvas Controls Overlay */}
-          <div className="absolute top-4 left-4 z-10 flex gap-2">
+          <div className="absolute top-3 left-3 z-10 flex gap-2">
             <div className={`rounded-lg p-1 flex shadow-md border ${
               nightMode ? 'bg-zinc-900/90 border-zinc-700' : 'bg-white/90 border-slate-200'
             }`}>
@@ -654,11 +685,18 @@ function Workspace2DContent() {
                 <Grid3x3 className="w-4 h-4" />
               </button>
             </div>
+            
+            {/* Zoom display pill */}
+            <div className={`rounded-lg px-2.5 py-1.5 flex items-center shadow-md border text-xs font-bold ${
+              nightMode ? 'bg-zinc-900/90 border-zinc-700 text-zinc-300' : 'bg-white/90 border-slate-200 text-slate-600'
+            }`}>
+              {zoom}%
+            </div>
           </div>
 
           {/* Keyboard Shortcuts Panel */}
           {showShortcuts && (
-            <div className={`absolute top-16 left-4 z-20 rounded-xl shadow-2xl border p-4 w-64 ${
+            <div className={`absolute top-14 left-3 z-20 rounded-xl shadow-2xl border p-4 w-64 max-w-[85vw] ${
               nightMode ? 'bg-zinc-900 border-zinc-700' : 'bg-white border-slate-200'
             }`}>
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">Keyboard Shortcuts</h3>
@@ -706,10 +744,25 @@ function Workspace2DContent() {
           </div>
         </main>
 
-        {/* Right Sidebar */}
-        <aside className={`absolute md:relative right-0 h-full md:h-auto w-80 max-w-[85vw] flex flex-col z-40 shrink-0 border-l transition-transform duration-500 ${
-          rightPanel === "none" ? "translate-x-full md:translate-x-0" : "translate-x-0 shadow-2xl md:shadow-none"
-        } ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}`}>
+        {/* Right Sidebar - Desktop Fixed / Mobile Sliding Bottom Sheet */}
+        <aside className={`
+          fixed md:relative bottom-0 left-0 right-0 md:left-auto md:right-auto md:bottom-auto
+          w-full md:w-80 max-h-[70vh] md:max-h-none flex flex-col z-40 shrink-0 border-t md:border-t-0 md:border-l 
+          rounded-t-2xl md:rounded-none shadow-2xl md:shadow-none transition-transform duration-300
+          ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full md:translate-y-0'}
+          ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}
+        `}>
+          {/* Mobile Handle Bar */}
+          <div className="md:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
+            <div className="w-10 h-1 bg-slate-300 dark:bg-zinc-700 rounded-full mx-auto" />
+            <button 
+              onClick={() => setMobilePanelOpen(false)}
+              className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+
           {/* Panel Tabs */}
           <div className={`flex items-center border-b p-2 gap-2 shrink-0 ${
             nightMode ? 'border-zinc-800' : 'border-slate-200'

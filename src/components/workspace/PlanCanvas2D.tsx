@@ -144,12 +144,67 @@ export default function PlanCanvas2D({
     });
   };
 
+  // Pinch-to-zoom for touch devices
+  const lastCenter = useRef<{ x: number; y: number } | null>(null);
+  const lastDist = useRef<number>(0);
+
+  const handleTouchMove = (e: Konva.KonvaEventObject<TouchEvent>) => {
+    const evt = e.evt;
+    const touch1 = evt.touches[0];
+    const touch2 = evt.touches[1];
+
+    if (touch1 && touch2) {
+      if (stageRef.current?.isDragging()) {
+        stageRef.current.stopDrag();
+      }
+
+      const p1 = { x: touch1.clientX, y: touch1.clientY };
+      const p2 = { x: touch2.clientX, y: touch2.clientY };
+
+      if (!lastCenter.current) {
+        lastCenter.current = { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 };
+      }
+
+      const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+
+      if (!lastDist.current) {
+        lastDist.current = dist;
+      }
+
+      const stage = stageRef.current;
+      if (!stage) return;
+
+      const pointTo = {
+        x: (lastCenter.current.x - stage.x()) / scale,
+        y: (lastCenter.current.y - stage.y()) / scale,
+      };
+
+      const newScale = scale * (dist / lastDist.current);
+      const clampedScale = Math.min(Math.max(0.25, newScale), 4);
+      setScale(clampedScale);
+
+      const newPos = {
+        x: (p1.x + p2.x) / 2 - pointTo.x * clampedScale,
+        y: (p1.y + p2.y) / 2 - pointTo.y * clampedScale,
+      };
+
+      setPosition(newPos);
+      lastDist.current = dist;
+      lastCenter.current = { x: (p1.x + p2.x) / 2, y: (p1.y + p2.y) / 2 };
+    }
+  };
+
+  const handleTouchEnd = () => {
+    lastDist.current = 0;
+    lastCenter.current = null;
+  };
+
   if (dimensions.width === 0 || dimensions.height === 0) {
     return <div ref={containerRef} className="w-full h-full relative" />;
   }
 
   return (
-    <div ref={containerRef} className="w-full h-full relative" style={{ cursor: isEditMode ? "default" : "grab" }}>
+    <div ref={containerRef} className="w-full h-full relative touch-none" style={{ cursor: isEditMode ? "default" : "grab" }}>
       <Stage
         width={dimensions.width}
         height={dimensions.height}
@@ -159,8 +214,10 @@ export default function PlanCanvas2D({
         y={position.y}
         draggable={!isEditMode}
         onWheel={handleWheel}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         onDragEnd={(e) => {
-          if (!isEditMode) {
+          if (!isEditMode && e.target === stageRef.current) {
             setPosition({ x: e.target.x(), y: e.target.y() });
           }
         }}

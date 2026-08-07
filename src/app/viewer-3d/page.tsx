@@ -144,19 +144,19 @@ function Viewer3DContent() {
   });
 
   return (
-    <div className={`h-screen w-full flex flex-col overflow-hidden transition-colors duration-1000 ${dayMode ? 'bg-sky-100' : 'bg-slate-950'}`}>
-      <header className="absolute top-0 left-0 w-full p-4 flex items-center justify-between z-20">
-        <div className="flex items-center gap-4">
+    <div className={`mobile-screen-h w-full flex flex-col overflow-hidden transition-colors duration-1000 ${dayMode ? 'bg-sky-100' : 'bg-slate-950'}`}>
+      <header className="absolute top-0 left-0 w-full p-3 sm:p-4 flex items-center justify-between z-20">
+        <div className="flex items-center gap-2 sm:gap-4 min-w-0">
           <Link href={rooms.length > 0 ? "/dashboard/process" : "/workspace"}
-            className={`p-2 rounded-lg transition-colors ${dayMode ? 'bg-white/80 hover:bg-white text-slate-700' : 'bg-black/50 hover:bg-black/80 text-slate-300'}`}>
+            className={`p-2 rounded-lg transition-colors shrink-0 ${dayMode ? 'bg-white/80 hover:bg-white text-slate-700' : 'bg-black/50 hover:bg-black/80 text-slate-300'}`}>
             <ArrowLeft className="w-5 h-5" />
           </Link>
-          <div className={`px-4 py-2 rounded-lg font-semibold text-sm backdrop-blur-md shadow-sm flex items-center gap-2 ${dayMode ? 'bg-white/80 text-slate-800' : 'bg-black/50 text-slate-200'}`}>
-            <Hexagon className="w-4 h-4 text-primary" />
-            {rooms.length > 0 ? `AI Generated Model (${rooms.length} rooms)` : "3D Preview"}
+          <div className={`px-3 sm:px-4 py-2 rounded-lg font-semibold text-xs sm:text-sm backdrop-blur-md shadow-sm flex items-center gap-2 truncate ${dayMode ? 'bg-white/80 text-slate-800' : 'bg-black/50 text-slate-200'}`}>
+            <Hexagon className="w-4 h-4 text-primary shrink-0" />
+            <span className="truncate">{rooms.length > 0 ? `3D Model (${rooms.length} rooms)` : "3D Preview"}</span>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <div className={`flex items-center rounded-lg p-1 backdrop-blur-md ${dayMode ? 'bg-white/80' : 'bg-black/50'}`}>
             <Link href="/workspace/2d" className={`px-3 py-1 text-xs font-medium transition-colors ${dayMode ? 'text-slate-500 hover:text-slate-800' : 'text-slate-400 hover:text-slate-100'}`}>2D</Link>
             <button className={`px-3 py-1 text-xs font-semibold shadow rounded-md ${dayMode ? 'bg-white text-slate-800' : 'bg-slate-800 text-white'}`}>3D</button>
@@ -164,7 +164,7 @@ function Viewer3DContent() {
         </div>
       </header>
 
-      <main className="flex-1 relative">
+      <main className="flex-1 relative touch-none">
         <Canvas camera={{ position: walkMode ? [5, 2, 15] : [rooms.length > 0 ? Math.max(25, rooms.length * 5) : 20, 15, 20], fov: walkMode ? 70 : 45 }}>
           {dayMode ? (
             <Sky sunPosition={[100, 20, 100]} />
@@ -191,34 +191,34 @@ function Viewer3DContent() {
         </Canvas>
       </main>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2 p-2 rounded-2xl backdrop-blur-md shadow-xl z-20 border transition-colors duration-1000 bg-white/80 dark:bg-black/60 border-slate-200 dark:border-slate-800">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-1.5 sm:gap-2 p-1.5 sm:p-2 rounded-2xl backdrop-blur-md shadow-xl z-20 border transition-colors duration-1000 bg-white/80 dark:bg-black/60 border-slate-200 dark:border-slate-800 max-w-[95vw] overflow-x-auto no-scrollbar">
         <button onClick={() => setDayMode(!dayMode)}
-          className={`p-3 rounded-xl transition-colors ${dayMode ? 'hover:bg-slate-100 text-slate-700' : 'bg-slate-800 text-yellow-400 hover:bg-slate-700'}`}
+          className={`p-2.5 sm:p-3 rounded-xl transition-colors shrink-0 ${dayMode ? 'hover:bg-slate-100 text-slate-700' : 'bg-slate-800 text-yellow-400 hover:bg-slate-700'}`}
           title="Toggle Day/Night">
-          {dayMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          {dayMode ? <Sun className="w-4 sm:w-5 h-4 sm:h-5" /> : <Moon className="w-4 sm:w-5 h-4 sm:h-5" />}
         </button>
-        <div className="w-px h-8 bg-slate-300 dark:bg-slate-700 mx-1" />
+        <div className="w-px h-6 sm:h-8 bg-slate-300 dark:bg-slate-700 mx-0.5 shrink-0" />
         <button onClick={() => setWalkMode(!walkMode)}
-          className={`p-3 rounded-xl transition-colors ${walkMode ? 'bg-primary/10 text-primary' : 'hover:bg-slate-100 text-slate-700 dark:hover:bg-slate-800 dark:text-slate-300'}`}
+          className={`p-2.5 sm:p-3 rounded-xl transition-colors shrink-0 ${walkMode ? 'bg-primary/10 text-primary' : 'hover:bg-slate-100 text-slate-700 dark:hover:bg-slate-800 dark:text-slate-300'}`}
           title="Walk-through Mode">
-          <Footprints className="w-5 h-5" />
+          <Footprints className="w-4 sm:w-5 h-4 sm:h-5" />
         </button>
-        <button className="p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300"
+        <button className="p-2.5 sm:p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300 shrink-0"
           title="Reset View">
-          <RotateCcw className="w-5 h-5" />
+          <RotateCcw className="w-4 sm:w-5 h-4 sm:h-5" />
         </button>
-        <div className="w-px h-8 bg-slate-300 dark:bg-slate-700 mx-1" />
-        <button className="p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300"
+        <div className="w-px h-6 sm:h-8 bg-slate-300 dark:bg-slate-700 mx-0.5 shrink-0" />
+        <button className="p-2.5 sm:p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300 shrink-0"
           title="Room Overview">
-          <Home className="w-5 h-5" />
+          <Home className="w-4 sm:w-5 h-4 sm:h-5" />
         </button>
-        <button className="p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300"
+        <button className="p-2.5 sm:p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300 shrink-0"
           title="Inspect">
-          <Eye className="w-5 h-5" />
+          <Eye className="w-4 sm:w-5 h-4 sm:h-5" />
         </button>
-        <button className="p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300"
+        <button className="p-2.5 sm:p-3 rounded-xl transition-colors hover:bg-slate-100 dark:hover:bg-slate-800 dark:text-slate-300 shrink-0"
           title="Measure">
-          <ZoomIn className="w-5 h-5" />
+          <ZoomIn className="w-4 sm:w-5 h-4 sm:h-5" />
         </button>
       </div>
     </div>
