@@ -85,7 +85,7 @@ export default function WorkspacePage() {
         </div>
       </header>
 
-      <div className="flex-1 flex overflow-hidden relative">
+      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
         
         {/* Left Toolbar Desktop Sidebar */}
         <aside className="hidden lg:flex w-14 bg-white dark:bg-zinc-900 border-r border-slate-200 dark:border-slate-800 flex-col items-center py-4 gap-2 z-20 shrink-0">
@@ -110,28 +110,6 @@ export default function WorkspacePage() {
             );
           })}
         </aside>
-
-        {/* Mobile Floating Horizontal Tool Dock */}
-        <div className="lg:hidden absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[95vw] overflow-x-auto no-scrollbar">
-          {tools.map((tool, i) => {
-            if (tool.divider) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
-            const isActive = activeTool === tool.id;
-            return (
-              <button
-                key={tool.id}
-                onClick={() => setActiveTool(tool.id as string)}
-                title={tool.label}
-                className={`p-2.5 rounded-xl transition-all shrink-0 ${
-                  isActive 
-                    ? 'bg-primary text-white shadow-md' 
-                    : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
-                }`}
-              >
-                {tool.icon && <tool.icon className="w-4 h-4" />}
-              </button>
-            );
-          })}
-        </div>
 
         {/* Center Canvas */}
         <main className="flex-1 relative bg-[#e2e8f0] dark:bg-[#09090b] overflow-hidden">
@@ -185,17 +163,39 @@ export default function WorkspacePage() {
             </div>
           </div>
 
+          {/* Mobile Floating Tool Dock */}
+          <div className="lg:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[88vw] overflow-x-auto no-scrollbar">
+            {tools.map((tool, i) => {
+              if (tool.divider) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
+              const isActive = activeTool === tool.id;
+              return (
+                <button
+                  key={tool.id}
+                  onClick={() => setActiveTool(tool.id as string)}
+                  title={tool.label}
+                  className={`p-2.5 rounded-xl transition-all shrink-0 ${
+                    isActive 
+                      ? 'bg-primary text-white shadow-md' 
+                      : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  }`}
+                >
+                  {tool.icon && <tool.icon className="w-4 h-4" />}
+                </button>
+              );
+            })}
+          </div>
+
         </main>
 
-        {/* Right Sidebar - Responsive Mobile Drawer / Desktop Sidebar */}
+        {/* Right Sidebar — Desktop: fixed beside canvas | Mobile: pushes canvas UP (no overlay) */}
         <aside className={`
-          fixed lg:relative bottom-0 left-0 right-0 lg:left-auto lg:right-auto lg:bottom-auto
-          w-full lg:w-80 max-h-[65vh] lg:max-h-none bg-white dark:bg-zinc-900 
-          border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800 
-          flex flex-col z-40 shrink-0 rounded-t-2xl lg:rounded-none shadow-2xl lg:shadow-none
-          transition-transform duration-300
-          ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full lg:translate-y-0'}
-          ${rightPanel === "none" ? 'lg:translate-x-full lg:absolute lg:right-0 lg:h-full' : 'lg:translate-x-0'}
+          w-full lg:w-80 shrink-0 flex flex-col overflow-hidden
+          border-t lg:border-t-0 lg:border-l border-slate-200 dark:border-slate-800
+          bg-white dark:bg-zinc-900
+          transition-[height] duration-300 ease-in-out
+          ${mobilePanelOpen ? 'h-[52vh]' : 'h-0'}
+          lg:h-auto
+          ${rightPanel === 'none' ? 'lg:hidden' : ''}
         `}>
           {/* Mobile Handle Bar */}
           <div className="lg:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
@@ -209,8 +209,7 @@ export default function WorkspacePage() {
           </div>
 
           
-          {/* Right Panel Tabs */}
-          <div className="flex border-b border-slate-200 dark:border-slate-800 p-2 gap-2 shrink-0">
+          <div className="flex border-b border-slate-200 dark:border-slate-800 p-2 gap-1.5 shrink-0">
             <button 
               onClick={() => setRightPanel("properties")}
               className={`flex-1 py-1.5 text-xs font-semibold rounded-md transition-colors ${rightPanel === 'properties' ? 'bg-slate-100 dark:bg-slate-800 text-foreground shadow-sm' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}
@@ -222,6 +221,12 @@ export default function WorkspacePage() {
               className={`flex-1 flex items-center justify-center gap-1 py-1.5 text-xs font-semibold rounded-md transition-colors ${rightPanel === 'ai' ? 'bg-primary/10 text-primary shadow-sm' : 'text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800/50'}`}
             >
               <Sparkles className="w-3 h-3" /> Copilot
+            </button>
+            <button
+              onClick={() => setMobilePanelOpen(false)}
+              className="lg:hidden p-1.5 rounded-md text-slate-400 hover:text-slate-700 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              <X className="w-4 h-4" />
             </button>
           </div>
 

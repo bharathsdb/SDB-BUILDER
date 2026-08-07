@@ -92,13 +92,6 @@ function Workspace2DContent() {
   const [showQRModal, setShowQRModal] = React.useState(false);
   const [mobilePanelOpen, setMobilePanelOpen] = React.useState(false);
 
-  // Auto-open panel on mobile when element selected
-  React.useEffect(() => {
-    if (selectedElement && typeof window !== 'undefined' && window.innerWidth < 1024) {
-      setMobilePanelOpen(true);
-    }
-  }, [selectedElement]);
-
   // Edit Mode & Undo/Redo State
   const [isEditMode, setIsEditMode] = React.useState(false);
   const [history, setHistory] = React.useState<Room[][]>([]);
@@ -597,8 +590,8 @@ function Workspace2DContent() {
         </div>
       </header>
 
-      <div className="flex-1 flex overflow-hidden relative">
-        {/* Left Toolbar - Desktop Sidebar & Mobile Floating Dock */}
+      <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
+        {/* Left Toolbar - Desktop Sidebar only */}
         <aside className={`hidden lg:flex w-14 flex-col items-center py-4 gap-2 z-20 shrink-0 border-r transition-colors duration-500 ${
           nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'
         }`}>
@@ -624,34 +617,10 @@ function Workspace2DContent() {
           })}
         </aside>
 
-        {/* Mobile Floating Horizontal Tool Dock */}
-        <div className="lg:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[95vw] overflow-x-auto no-scrollbar">
-          {tools.map((tool, i) => {
-            if ("divider" in tool) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
-            const isActive = activeTool === tool.id;
-            return (
-              <button
-                key={tool.id}
-                onClick={() => setActiveTool(tool.id)}
-                title={tool.label}
-                className={`p-2.5 rounded-xl transition-all shrink-0 ${
-                  isActive
-                    ? 'bg-primary text-white shadow-md'
-                    : nightMode
-                      ? 'text-zinc-400 hover:bg-zinc-800'
-                      : 'text-slate-600 hover:bg-slate-100'
-                }`}
-              >
-                {React.createElement(tool.icon, { className: "w-4 h-4" })}
-              </button>
-            );
-          })}
-        </div>
-
-        {/* Center Canvas */}
+        {/* Center Canvas - takes all available height, shrinks when mobile panel opens */}
         <main
           ref={canvasRef}
-          className={`flex-1 relative overflow-hidden transition-colors duration-500 ${
+          className={`flex-1 min-h-0 relative overflow-hidden transition-colors duration-500 ${
             nightMode ? 'bg-[#0a0a0f]' : 'bg-[#e2e8f0]'
           }`}
           onMouseMove={handleMouseMove}
@@ -742,30 +711,46 @@ function Workspace2DContent() {
               />
             )}
           </div>
+
+          {/* Mobile Floating Horizontal Tool Dock - anchored inside canvas */}
+          <div className="lg:hidden absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex items-center gap-1.5 p-1.5 rounded-2xl backdrop-blur-md shadow-2xl border bg-white/90 dark:bg-zinc-900/90 border-slate-200 dark:border-zinc-800 max-w-[88vw] overflow-x-auto no-scrollbar">
+            {tools.map((tool, i) => {
+              if ("divider" in tool) return <div key={i} className="w-px h-6 bg-slate-200 dark:bg-zinc-800 mx-0.5 shrink-0" />;
+              const isActive = activeTool === tool.id;
+              return (
+                <button
+                  key={tool.id}
+                  onClick={() => setActiveTool(tool.id)}
+                  title={tool.label}
+                  className={`p-2.5 rounded-xl transition-all shrink-0 ${
+                    isActive
+                      ? 'bg-primary text-white shadow-md'
+                      : nightMode
+                        ? 'text-zinc-400 hover:bg-zinc-800'
+                        : 'text-slate-600 hover:bg-slate-100'
+                  }`}
+                >
+                  {React.createElement(tool.icon, { className: "w-4 h-4" })}
+                </button>
+              );
+            })}
+          </div>
         </main>
 
-        {/* Right Sidebar - Desktop Fixed / Mobile Sliding Bottom Sheet */}
+        {/* Right Sidebar — Desktop: fixed beside canvas | Mobile: pushes canvas UP (no overlay) */}
         <aside className={`
-          fixed lg:relative bottom-0 left-0 right-0 lg:left-auto lg:right-auto lg:bottom-auto
-          w-full lg:w-80 max-h-[70vh] lg:max-h-none flex flex-col z-40 shrink-0 border-t lg:border-t-0 lg:border-l 
-          rounded-t-2xl lg:rounded-none shadow-2xl lg:shadow-none transition-transform duration-300
-          ${mobilePanelOpen ? 'translate-y-0' : 'translate-y-full lg:translate-y-0'}
-          ${rightPanel === "none" ? 'lg:translate-x-full lg:absolute lg:right-0 lg:h-full' : 'lg:translate-x-0'}
+          w-full lg:w-80 shrink-0 flex flex-col overflow-hidden
+          border-t lg:border-t-0 lg:border-l
+          transition-[height] duration-300 ease-in-out
+          ${mobilePanelOpen ? 'h-[52vh]' : 'h-0'}
+          lg:h-auto
+          ${rightPanel === 'none' ? 'lg:hidden' : ''}
           ${nightMode ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-slate-200'}
         `}>
-          {/* Mobile Handle Bar */}
-          <div className="lg:hidden flex items-center justify-between px-4 py-2 border-b border-slate-100 dark:border-zinc-800">
-            <div className="w-10 h-1 bg-slate-300 dark:bg-zinc-700 rounded-full mx-auto" />
-            <button 
-              onClick={() => setMobilePanelOpen(false)}
-              className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          </div>
+          {/* Mobile Floating Tool Dock (inside canvas, above panel) */}
 
-          {/* Panel Tabs */}
-          <div className={`flex items-center border-b p-2 gap-2 shrink-0 ${
+          {/* Panel close strip (mobile) + tabs */}
+          <div className={`flex items-center border-b p-2 gap-1.5 shrink-0 ${
             nightMode ? 'border-zinc-800' : 'border-slate-200'
           }`}>
             <button
@@ -798,7 +783,12 @@ function Workspace2DContent() {
             >
               <Sparkles className="w-3 h-3" /> Copilot
             </button>
-            <button onClick={() => setRightPanel("none")} className="lg:hidden p-1.5 ml-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300">
+            {/* Close button for mobile (collapses the panel, canvas expands back) */}
+            <button
+              onClick={() => setMobilePanelOpen(false)}
+              className="lg:hidden p-1.5 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors"
+              title="Close panel"
+            >
               <X className="w-4 h-4" />
             </button>
           </div>
