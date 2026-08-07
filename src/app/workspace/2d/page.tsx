@@ -793,9 +793,30 @@ function Workspace2DContent() {
             display: (!isMobile && rightPanel === 'none') ? 'none' : 'flex',
           }}
         >
-          {/* Mobile Floating Tool Dock (inside canvas, above panel) */}
+          {/* Dedicated Sidebar Header Bar with prominent Close button */}
+          <div className={`flex items-center justify-between px-3 py-2 border-b shrink-0 ${
+            nightMode ? 'bg-zinc-800/80 border-zinc-700' : 'bg-slate-100 border-slate-200'
+          }`}>
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 flex items-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-primary" /> Sidebar Panel
+            </span>
+            <button
+              onClick={() => {
+                if (isMobile) {
+                  setMobilePanelOpen(false);
+                } else {
+                  setRightPanel("none");
+                }
+              }}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold bg-red-500 text-white hover:bg-red-600 transition-colors shadow-sm cursor-pointer"
+              title="Close Sidebar"
+            >
+              <X className="w-4 h-4" />
+              <span>Close Sidebar</span>
+            </button>
+          </div>
 
-          {/* Panel close strip (mobile) + tabs */}
+          {/* Panel Tabs */}
           <div className={`flex items-center border-b p-2 gap-1.5 shrink-0 ${
             nightMode ? 'border-zinc-800' : 'border-slate-200'
           }`}>
@@ -828,20 +849,6 @@ function Workspace2DContent() {
               }`}
             >
               <Sparkles className="w-3 h-3" /> Copilot
-            </button>
-            {/* Close button for all devices */}
-            <button
-              onClick={() => {
-                if (isMobile) {
-                  setMobilePanelOpen(false);
-                } else {
-                  setRightPanel("none");
-                }
-              }}
-              className="p-1.5 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors ml-auto"
-              title="Close / Hide Sidebar"
-            >
-              <X className="w-4 h-4" />
             </button>
           </div>
 
